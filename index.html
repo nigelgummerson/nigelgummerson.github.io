@@ -3,20 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Skeletal Surgery Planning Tools</title>
+<title>Skeletal Surgery Planning Tools | Spinal Instrumentation Plan &amp; Record</title>
+<meta name="description" content="Free digital surgical planning tools for spinal surgeons. Leeds Spinal Instrumentation Plan and Record — visual pre-operative planning with PDF export. Runs offline on hospital computers. 14 languages.">
+<meta name="keywords" content="spinal instrumentation, surgical planning, spine surgery, pedicle screw planning, pre-operative plan, operative record, spinal construct, Leeds, NHS, orthopaedic surgery, deformity correction">
+<meta name="author" content="Nigel Gummerson">
+<link rel="canonical" href="https://plan.skeletalsurgery.com/">
+<meta property="og:title" content="Skeletal Surgery Planning Tools">
+<meta property="og:description" content="Free digital surgical planning tools for spinal surgeons. Visual pre-operative instrumentation planning with PDF export. Runs offline on hospital computers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://plan.skeletalsurgery.com/">
 <style>
-  body { font-family: -apple-system, system-ui, sans-serif; max-width: 600px; margin: 80px auto; padding: 0 20px; color: #1a1a1a; }
-  h1 { font-size: 1.5rem; font-weight: 600; }
-  ul { list-style: none; padding: 0; }
-  li { margin: 12px 0; }
-  a { color: #2563eb; text-decoration: none; }
-  a:hover { text-decoration: underline; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, system-ui, 'Segoe UI', sans-serif; color: #1a1a1a; line-height: 1.6; }
+  .header { background: #0d1b2a; color: #fff; padding: 48px 24px; text-align: center; }
+  .header h1 { font-size: 1.75rem; font-weight: 600; letter-spacing: -0.01em; }
+  .header p { margin-top: 8px; color: #94a3b8; font-size: 0.95rem; }
+  .main { max-width: 720px; margin: 0 auto; padding: 40px 24px; }
+  .tool { border: 1px solid #e2e8f0; border-radius: 8px; padding: 28px; margin-bottom: 24px; }
+  .tool h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 4px; }
+  .tool h2 a { color: #1a1a1a; text-decoration: none; }
+  .tool h2 a:hover { color: #2563eb; }
+  .tool .subtitle { color: #64748b; font-size: 0.85rem; margin-bottom: 16px; }
+  .tool p { color: #374151; font-size: 0.95rem; margin-bottom: 16px; }
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; margin-bottom: 20px; }
+  .features span { color: #475569; font-size: 0.85rem; padding-left: 16px; position: relative; }
+  .features span::before { content: "\2022"; position: absolute; left: 0; color: #94a3b8; }
+  .cta { display: inline-block; background: #2563eb; color: #fff; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+  .cta:hover { background: #1d4ed8; }
+  .badge { display: inline-block; background: #f0fdf4; color: #166534; font-size: 0.75rem; font-weight: 500; padding: 2px 8px; border-radius: 4px; border: 1px solid #bbf7d0; margin-left: 8px; vertical-align: middle; }
+  .footer { border-top: 1px solid #e2e8f0; margin-top: 48px; padding: 24px; text-align: centre; color: #94a3b8; font-size: 0.8rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .footer a { color: #94a3b8; }
+  @media (max-width: 480px) { .features { grid-template-columns: 1fr; } }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Spinal Instrumentation Plan & Record",
+  "alternateName": "Leeds Spinal Instrumentation Plan and Record",
+  "description": "Free digital surgical planning tool for spinal surgeons. Visual pre-operative instrumentation planning and post-operative construct recording with PDF export. Runs offline on hospital computers.",
+  "url": "https://plan.skeletalsurgery.com/spine/",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Any modern web browser",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
+  "author": {
+    "@type": "Person",
+    "name": "Nigel Gummerson",
+    "jobTitle": "Spinal Surgeon",
+    "affiliation": { "@type": "Organization", "name": "Leeds Teaching Hospitals NHS Trust" }
+  },
+  "license": "https://www.gnu.org/licenses/gpl-3.0.html",
+  "inLanguage": ["en","de","fr","es","it","pt","sv","nb","da","fi","nl","pl","el","tr"]
+}
+</script>
 </head>
 <body>
-<h1>Skeletal Surgery Planning Tools</h1>
-<ul>
-  <li><a href="/spine/">Spinal Instrumentation Plan &amp; Record</a></li>
-</ul>
+<header class="header">
+  <h1>Skeletal Surgery Planning Tools</h1>
+  <p>Open-source digital tools for surgical planning</p>
+</header>
+<main class="main">
+  <article class="tool">
+    <h2><a href="/spine/">Spinal Instrumentation Plan &amp; Record</a><span class="badge">Free</span></h2>
+    <p class="subtitle">Leeds Spinal Instrumentation Plan and Record</p>
+    <p>A visual surgical planning tool that replaces hand-drawn instrumentation diagrams. Documents the pre-operative plan and post-operative construct as a professional, exportable chart. Designed to run offline on hospital computers with no installation.</p>
+    <div class="features">
+      <span>Pedicle screws, hooks &amp; fixation</span>
+      <span>Interbody cages (ACDF to ALIF)</span>
+      <span>Schwab osteotomy classification</span>
+      <span>Deformity correction forces</span>
+      <span>16 implant manufacturers</span>
+      <span>Auto-generated inventory</span>
+      <span>PDF &amp; JPG export</span>
+      <span>14 European languages</span>
+      <span>Dual-window theatre sync</span>
+      <span>Session privacy (GDPR)</span>
+      <span>Tablet &amp; portrait mode</span>
+      <span>Works offline</span>
+    </div>
+    <a href="/spine/" class="cta">Open Spine Planner</a>
+  </article>
+</main>
+<footer class="footer">
+  <p>Developed in Leeds, United Kingdom. Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv3</a>. Source on <a href="https://github.com/nigelgummerson/spine">GitHub</a>.</p>
+</footer>
 </body>
 </html>
