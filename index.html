@@ -138,15 +138,10 @@
   .callout{ border-radius:8px; padding:13px 16px; font-size:.86rem; line-height:1.5; margin-top:14px; }
   .callout.amber{ background:#fdf6e3; border:1px solid #f3e2b3; color:#7c5a13; }
   .callout.blue{ background:#eef6fb; border:1px solid #cfe4f1; color:#2a5067; }
-  details.features{ margin-top:22px; border:1px solid var(--line); border-radius:12px; padding:0 20px; background:var(--soft); }
-  details.features summary{ cursor:pointer; font-weight:600; font-size:.95rem; padding:16px 0; list-style:none; color:var(--ink); }
-  details.features summary::-webkit-details-marker{ display:none; }
-  details.features summary::after{ content:"  Show all  ▾"; color:var(--muted); font-weight:500; font-size:.85rem; }
-  details.features[open] summary::after{ content:"  Hide  ▴"; }
-  .feat-list{ display:grid; grid-template-columns:1fr 1fr; gap:9px 26px; padding:4px 0 22px; }
-  .feat-list span{ color:#48566a; font-size:.85rem; padding-left:18px; position:relative; }
-  .feat-list span::before{ content:""; position:absolute; left:2px; top:.62em; width:5px; height:5px; border-radius:50%; background:var(--accent); }
-  @media (max-width:560px){ .feat-list{ grid-template-columns:1fr; } }
+  .highlights{ display:grid; grid-template-columns:1fr 1fr; gap:18px 30px; margin-top:24px; }
+  .highlights b{ display:block; color:var(--ink); font-size:.95rem; margin-bottom:3px; }
+  .highlights span{ color:var(--muted); font-size:.86rem; line-height:1.5; }
+  @media (max-width:560px){ .highlights{ grid-template-columns:1fr; } }
 
   .disclaimer h2{ font-size:.92rem; font-weight:700; color:var(--muted); margin-bottom:12px; text-transform:uppercase; letter-spacing:.04em; }
   .disclaimer p{ color:var(--muted); font-size:.82rem; margin-bottom:10px; line-height:1.55; }
@@ -338,51 +333,17 @@
       <p class="callout amber">Documentation tool, not a medical device. Not approved, cleared, or certified by MHRA, EU MDR notified bodies, or the FDA.</p>
       <p class="callout blue">Population-based reference data from published literature is provided for convenience. The operating surgeon must verify all values against the patient's anatomy and imaging.</p>
 
-      <details class="features">
-        <summary>Capabilities</summary>
-        <div class="feat-list">
-          <span>Pedicle screws, hooks &amp; fixation</span>
-          <span>Adaptive portrait layout — controls on a slim side rail with the spine filling the screen; four tabs (Patient, Plan, Final, Inventory); the same on phone and tablet</span>
-          <span>Workflow toolbar on desktop, laptop and tablet — the rail follows the surgical flow (Plan, Scan, Keep) with both the plan and final-record charts side by side, and a keyboard-shortcuts guide with on-hover hints</span>
-          <span>Save, share &amp; export from any device — one Save &amp; Share menu for files, JPG/PDF, QR codes, share links and templates; opens the native share sheet on phone and tablet</span>
-          <span>Non-standard vertebral anatomy — 11/13 thoracic, 4/6 lumbar, lumbosacral transitional (sacralised L5 / lumbarised S1)</span>
-          <span>Interbody cages (ACDF to ALIF) and disc replacement (cervical ACDR + lumbar TDR / arthroplasty)</span>
-          <span>Schwab osteotomy classification</span>
-          <span>Deformity correction forces</span>
-          <span>Level-specific trajectories (pedicle, lateral mass, cortical, translaminar, pars, transarticular)</span>
-          <span>Screw shank PA projection visualisation</span>
-          <span>Multi-system implant support (up to 5)</span>
-          <span>16 manufacturers, 98 systems with kit validation</span>
-          <span>Modular barcode/UDI scanning (shank, head, set screw, blocker)</span>
-          <span>Cage and rod barcode scanning with auto-fill (approach, dimensions, material, length)</span>
-          <span>Hook barcode/UDI scanning — allocate to a planned hook or place a new one from the scan</span>
-          <span>Reconstruction cage (VBR) scanning for corpectomy — VLIFT, Capri, FORTIFY with inline accessory (endcap, bone screw) scan rows</span>
-          <span>Multi-level corpectomy on chart (1–4 vertebrae) — endplate-to-endplate cage with end-caps; resected bodies render as dashed outlines</span>
-          <span>Unified scan surface (camera, wedge, manual typing) inside every implant modal</span>
-          <span>Full-screen camera scanning when space is tight — the viewfinder fills the screen on a phone, or an iPad in portrait, with the side-by-side preview kept when there's room</span>
-          <span>Wrong-component scans soft-route to the case scan pool — no work lost</span>
-          <span>Case-level scan pool (bulk-scan set screws, allocate to levels later; HIBC + GS1)</span>
-          <span>91,473 implant barcodes in offline catalogue across 136 systems (including 8 cervical artificial disc brands and Stryker sterile-pack references; lumbar TDR scans resolve via openFDA online lookup pending v3.19.01 GUDID harvest)</span>
-          <span>Per-component lot &amp; expiry traceability</span>
-          <span>Clinical attribute badges on every scan (cannulated, fenestrated, augmentable, cortical, MIS, long vs short blade)</span>
-          <span>HIBC Code 128 support (Stryker spine) in addition to GS1-128 and GS1 DataMatrix</span>
-          <span>Sex-specific screw size ranges (population morphometry)</span>
-          <span>Standard vs specialist screw sizes — picker defaults to manufacturer STG ordering matrix; specialist GUDID-only sizes still scan and round-trip</span>
-          <span>Catalogue warnings for out-of-system screws</span>
-          <span>Structured rod data &amp; linked lengths</span>
-          <span>Auto-generated inventory by screw system</span>
-          <span>Record locking (Finalise &amp; Lock Record) with clear feedback when edits are attempted on a locked record</span>
-          <span>Patient age auto-derived from DOB and surgery date</span>
-          <span>Undo / Redo on every form factor (toolbar buttons + keyboard chord)</span>
-          <span>Trust this device preference</span>
-          <span>PDF (A4 300 DPI), JPG &amp; JSON export</span>
-          <span>22 languages (incl. CJK &amp; RTL)</span>
-          <span>QR code sharing (show, scan, load from image)</span>
-          <span>Dual-window theatre sync</span>
-          <span>Privacy by default (no telemetry)</span>
-          <span>Tablet &amp; phone-portrait — full case authoring on mobile screens</span>
-        </div>
-      </details>
+      <div class="highlights">
+        <div><b>Whole-spine instrumentation</b><span>Pedicle screws, hooks, rods and fixation, occiput to pelvis.</span></div>
+        <div><b>Cages, discs &amp; osteotomies</b><span>Interbody cages (ACDF to ALIF), cervical and lumbar disc replacement, Schwab osteotomies and corpectomy.</span></div>
+        <div><b>Deformity planning</b><span>Correction forces and level-specific screw trajectories (pedicle, lateral mass, cortical, translaminar).</span></div>
+        <div><b>Barcode &amp; UDI scanning</b><span>Reads GS1 and HIBC, auto-filling system, size, lot and expiry, or enter the sizes by hand.</span></div>
+        <div><b>Traceability &amp; inventory</b><span>Per-component lot and expiry, with an auto-generated implant inventory.</span></div>
+        <div><b>Variant anatomy</b><span>Transitional lumbosacral levels and non-standard thoracic and lumbar counts.</span></div>
+        <div><b>Export &amp; share</b><span>PDF, JPG and JSON, with QR-code and link sharing.</span></div>
+        <div><b>Built for theatre</b><span>Works offline, private by default with no telemetry, and available in many languages including right-to-left and CJK scripts.</span></div>
+      </div>
+      <p style="margin-top:20px;"><a href="/spine/quick-reference.html">See the full feature guide &rarr;</a></p>
     </div>
   </section>
 
