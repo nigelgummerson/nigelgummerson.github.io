@@ -54,7 +54,7 @@
   "mfr-card-blurb": "Mail uw STG's en GTIN/UDI-export en wij voegen het systeem toe aan de catalogus.",
   "mfr-card-button": "STG + GTIN-data mailen",
   "about-h2": "Plan en registratie van spinale instrumentatie <span class=\"pill\">Gratis</span>",
-  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.51.00-beta",
+  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.51.01-beta",
   "about-lead": "Een digitale documentatietool voor instrumentatie bij wervelkolomchirurgie. Het registreert het preoperatieve plan en het postoperatieve construct, en vervangt met de hand getekende diagrammen door een gestructureerd, exporteerbaar formaat. De webapp is de belangrijkste manier om het te gebruiken en draait in elke moderne browser op een verbonden ziekenhuiscomputer. Telefoonapps voegen snel implantaten scannen op de OK toe, en een offline build in één bestand dekt de zeldzame air-gapped machine die de webapp zelfs niet één keer kan laden.",
   "hl-record-title": "Het volledige verslag",
   "hl-record-desc": "Documenteer de hele casus op één plek: elk implantaat, plus de decompressie, osteotomieën, platen, staven en cross-links. Een volledig constructverslag dat navigatie en robotica aanvult.",
