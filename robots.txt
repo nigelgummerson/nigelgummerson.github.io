@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /spine/review-forms/
-Disallow: /alt.html
-Disallow: /alt2.html
 
 Sitemap: https://plan.skeletalsurgery.com/sitemap.xml
