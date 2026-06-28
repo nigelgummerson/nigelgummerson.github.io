@@ -64,49 +64,24 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   .trustline{ margin-top:20px; color:#7e8ea0; font-size:.82rem; }
   .trustline b{ color:#aab8c8; font-weight:600; }
 
-  /* ALT2 layout: LEFT-aligned hero text, then a full-width baseline "shelf" with
-     two labelled clusters (theatre monitors + tablet/phone), clusters slightly
-     overlapped for depth. */
-  .hero-in.shelf-hero{ display:block; max-width:1100px; padding:58px 24px 8px; }
-  .hero-in.shelf-hero .hero-copy{ max-width:720px; }
-  .montage-shelf{ max-width:1100px; margin:34px auto 0; display:flex; align-items:flex-end;
-    justify-content:center; gap:7%; padding:0 24px 10px; }
-  .cluster{ display:flex; flex-direction:column; align-items:center; gap:16px; }
+  /* ALT2: a compact labelled baseline "shelf" living in the hero's right column,
+     beside the left-aligned text. Two clusters share a baseline; portrait
+     monitor = landscape rotated 90deg (height = landscape width); portrait
+     overlaps landscape and iPhone overlaps iPad for depth. */
+  .montage-shelf{ display:flex; align-items:flex-end; justify-content:center; gap:26px; align-self:start; }
+  .cluster{ display:flex; flex-direction:column; align-items:center; gap:13px; }
   .cluster-row{ display:flex; align-items:flex-end; }
-  .cluster-label{ font-size:.7rem; letter-spacing:.15em; text-transform:uppercase; color:#7e8ea0; font-weight:600; }
-  .mon{ border:1px solid #2a3a4d; border-radius:4px; box-shadow:0 18px 40px -20px rgba(0,0,0,.6); display:block; }
-  /* portrait monitor = landscape rotated: portrait HEIGHT (204/0.601=340) = landscape WIDTH (340) */
-  .mon-land{ width:340px; }
-  .mon-port{ width:204px; margin-left:-34px; position:relative; z-index:2; }
-  .shelf-dev{ background:#0e141b; box-shadow:0 18px 40px -18px rgba(0,0,0,.66); }
+  .cluster-label{ font-size:.62rem; letter-spacing:.13em; text-transform:uppercase; color:#7e8ea0; font-weight:600; text-align:center; }
+  .mon{ border:1px solid #2a3a4d; border-radius:3px; box-shadow:0 14px 32px -18px rgba(0,0,0,.6); display:block; }
+  .mon-land{ width:176px; }
+  .mon-port{ width:106px; margin-left:-24px; position:relative; z-index:2; }
+  .shelf-dev{ background:#0e141b; box-shadow:0 14px 32px -16px rgba(0,0,0,.66); }
   .shelf-dev img{ display:block; width:100%; }
-  .shelf-pad{ border-radius:16px; padding:7px; width:206px; position:relative; z-index:1; }
-  .shelf-pad img{ border-radius:9px; }
-  .shelf-phone{ border-radius:20px; padding:6px; width:120px; margin-left:-30px; position:relative; z-index:2; }
-  .shelf-phone img{ border-radius:14px; }
-  @media (max-width:760px){ .montage-shelf{ flex-direction:column; gap:34px; } }
-
-  .shot{ position:relative; width:100%; aspect-ratio:1 / 0.92; }
-  /* Desktops are monitors: square corners (tiny radius), thin frame.
-     A dual-screen theatre rig: one landscape monitor (full plan) + one
-     portrait monitor showing just the planned construct. */
-  .m-desk{ position:absolute; border:1px solid #2a3a4d; border-radius:4px; box-shadow:0 20px 44px -22px rgba(0,0,0,.6); display:block; }
-  /* m-desk2 is the SAME monitor as m-desk1, rotated 90deg to portrait:
-     landscape width 56% (aspect 1.664) -> height 33.6%; the portrait monitor
-     is therefore width 34% (= that height) with the portrait capture's 0.601
-     aspect giving back height ~56% = the landscape's width. Same hardware. */
-  .m-desk1{ width:56%; top:8%; left:0; z-index:1; }
-  .m-desk2{ width:34%; top:0; right:4%; z-index:3; }
-  /* iPad/iPhone are devices: a dark bezel frame is the safe zone, so the
-     rounded corners no longer clip the full-bleed screenshot content. */
-  .dev{ position:absolute; background:#0e141b; box-shadow:0 22px 46px -20px rgba(0,0,0,.66); }
-  .dev img{ display:block; width:100%; }
-  .dev-pad{ border-radius:16px; padding:7px; }
-  .dev-pad img{ border-radius:9px; }
-  .dev-phone{ border-radius:22px; padding:6px; }
-  .dev-phone img{ border-radius:16px; }
-  .m-pad{ bottom:0; left:3%; width:25%; z-index:4; }
-  .m-phone1{ bottom:0; left:29%; width:14%; z-index:5; }
+  .shelf-pad{ border-radius:13px; padding:5px; width:116px; }
+  .shelf-pad img{ border-radius:8px; }
+  .shelf-phone{ border-radius:15px; padding:5px; width:66px; margin-left:-18px; position:relative; z-index:2; }
+  .shelf-phone img{ border-radius:10px; }
+  @media (max-width:840px){ .montage-shelf{ align-self:center; gap:30px; } }
   /* Click any screenshot to zoom (full-resolution lightbox). */
   .zoomable{ cursor:zoom-in; }
   #lightbox{ position:fixed; inset:0; z-index:200; display:none; align-items:center; justify-content:center;
@@ -185,10 +160,11 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
 
   /* How it works: Plan / Scan / Keep */
   .how-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .step{ display:grid; grid-template-columns:auto 1fr; column-gap:11px; align-items:center; }
   .step .n{ display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:8px; background:var(--accent-soft); color:var(--accent-d); font-weight:800; font-size:.9rem; }
-  .step h3{ font-size:1.08rem; margin:12px 0 6px; }
-  .step p{ color:var(--body); font-size:.9rem; }
-  .step ul{ list-style:none; margin:10px 0 0; }
+  .step h3{ font-size:1.08rem; margin:0; }
+  .step p{ color:var(--body); font-size:.9rem; grid-column:1 / -1; margin-top:12px; }
+  .step ul{ list-style:none; margin:12px 0 0; grid-column:1 / -1; }
   .step ul li{ position:relative; padding-left:18px; font-size:.88rem; color:var(--body); margin-bottom:6px; }
   .step ul li::before{ content:""; position:absolute; left:2px; top:.6em; width:5px; height:5px; border-radius:50%; background:var(--accent); }
   @media (max-width:740px){ .how-grid{ grid-template-columns:1fr; gap:18px; } }
@@ -200,7 +176,7 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   .code-stack{ display:flex; flex-direction:column; gap:9px; }
   .code-stack img{ height:86px; }
   .scan-strip .caption{ margin:22px auto 16px; max-width:56ch; color:var(--muted); font-size:.9rem; }
-  .lead-p{ color:var(--body); font-size:1rem; margin:0 0 14px; max-width:62ch; }
+  .lead-p{ color:var(--body); font-size:1rem; margin:0 0 14px; }
   .pill{ display:inline-block; background:var(--accent-soft); color:var(--accent-d); font-size:.68rem; font-weight:700; padding:3px 9px; border-radius:999px; vertical-align:middle; letter-spacing:.03em; text-transform:uppercase; }
   .callout{ border-radius:8px; padding:13px 16px; font-size:.86rem; line-height:1.5; margin-top:14px; }
   .callout.amber{ background:#fdf6e3; border:1px solid #f3e2b3; color:#7c5a13; }
@@ -253,7 +229,7 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
 </nav>
 
 <header class="hero">
-  <div class="hero-in shelf-hero">
+  <div class="hero-in">
     <div class="hero-copy">
       <p class="eyebrow">A planning and record tool for spine surgeons</p>
       <h1>Plan and record spinal instrumentation surgery</h1>
@@ -265,21 +241,21 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
       </div>
       <p class="trustline"><b>Free for clinical use</b> · works offline · 22 languages · no account, no telemetry</p>
     </div>
-  </div>
-  <div class="montage-shelf">
-    <div class="cluster">
-      <div class="cluster-row">
-        <img class="mon mon-land zoomable" src="/img/screenshot-plan.png" alt="Skeletal Plan on a desktop monitor: a pedicle subtraction osteotomy plan with the operative record and a live implant inventory" loading="eager" width="1700">
-        <img class="mon mon-port zoomable" src="/img/screenshot-portrait.png" alt="Skeletal Plan on a portrait second monitor: the operative record with the planned construct shown in teal" loading="lazy" width="1600">
+    <div class="montage-shelf">
+      <div class="cluster">
+        <div class="cluster-row">
+          <img class="mon mon-land zoomable" src="/img/screenshot-plan.png" alt="Skeletal Plan on a desktop monitor: a pedicle subtraction osteotomy plan with the operative record and a live implant inventory" loading="eager" width="1700">
+          <img class="mon mon-port zoomable" src="/img/screenshot-portrait.png" alt="Skeletal Plan on a portrait second monitor: the operative record with the planned construct shown in teal" loading="lazy" width="1600">
+        </div>
+        <span class="cluster-label">Theatre monitor · single or dual screen</span>
       </div>
-      <span class="cluster-label">Theatre monitor · single or dual screen</span>
-    </div>
-    <div class="cluster">
-      <div class="cluster-row">
-        <div class="shelf-dev shelf-pad"><img class="zoomable" src="/img/screenshot-ipad.png" alt="Skeletal Plan on iPad: a cervical corpectomy with a reconstruction cage" loading="lazy" width="1100"></div>
-        <div class="shelf-dev shelf-phone"><img class="zoomable" src="/img/screenshot-phone.png" alt="Skeletal Plan on iPhone: a scoliosis instrumentation plan" loading="lazy" width="1179"></div>
+      <div class="cluster">
+        <div class="cluster-row">
+          <div class="shelf-dev shelf-pad"><img class="zoomable" src="/img/screenshot-ipad.png" alt="Skeletal Plan on iPad: a cervical corpectomy with a reconstruction cage" loading="lazy" width="1100"></div>
+          <div class="shelf-dev shelf-phone"><img class="zoomable" src="/img/screenshot-phone.png" alt="Skeletal Plan on iPhone: a scoliosis instrumentation plan" loading="lazy" width="1179"></div>
+        </div>
+        <span class="cluster-label">Tablet &amp; phone</span>
       </div>
-      <span class="cluster-label">Tablet &amp; phone</span>
     </div>
   </div>
 </header>
