@@ -68,8 +68,12 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
      A dual-screen theatre rig: one landscape monitor (full plan) + one
      portrait monitor showing just the planned construct. */
   .m-desk{ position:absolute; border:1px solid #2a3a4d; border-radius:4px; box-shadow:0 20px 44px -22px rgba(0,0,0,.6); display:block; }
-  .m-desk1{ width:60%; top:4%; left:0; z-index:1; }
-  .m-desk2{ width:29%; top:3%; right:9%; z-index:3; }
+  /* m-desk2 is the SAME monitor as m-desk1, rotated 90deg to portrait:
+     landscape width 56% (aspect 1.664) -> height 33.6%; the portrait monitor
+     is therefore width 34% (= that height) with the portrait capture's 0.601
+     aspect giving back height ~56% = the landscape's width. Same hardware. */
+  .m-desk1{ width:56%; top:8%; left:0; z-index:1; }
+  .m-desk2{ width:34%; top:0; right:4%; z-index:3; }
   /* iPad/iPhone are devices: a dark bezel frame is the safe zone, so the
      rounded corners no longer clip the full-bleed screenshot content. */
   .dev{ position:absolute; background:#0e141b; box-shadow:0 22px 46px -20px rgba(0,0,0,.66); }
@@ -78,8 +82,17 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   .dev-pad img{ border-radius:9px; }
   .dev-phone{ border-radius:22px; padding:6px; }
   .dev-phone img{ border-radius:16px; }
-  .m-pad{ bottom:0; left:4%; width:26%; z-index:4; }
-  .m-phone1{ bottom:-2%; left:30%; width:17%; z-index:5; }
+  .m-pad{ bottom:0; left:3%; width:25%; z-index:4; }
+  .m-phone1{ bottom:-3%; left:28%; width:15.5%; z-index:5; }
+  /* Click any screenshot to zoom (full-resolution lightbox). */
+  .zoomable{ cursor:zoom-in; }
+  #lightbox{ position:fixed; inset:0; z-index:200; display:none; align-items:center; justify-content:center;
+    background:rgba(6,10,16,.93); padding:24px; cursor:zoom-out; }
+  #lightbox.open{ display:flex; }
+  #lightbox img{ max-width:96vw; max-height:94vh; width:auto; height:auto; border-radius:6px;
+    box-shadow:0 30px 90px -20px rgba(0,0,0,.85); }
+  #lightbox .lb-close{ position:absolute; top:16px; right:20px; color:#cdd8e4; font-size:30px;
+    line-height:1; background:none; border:0; cursor:pointer; }
   @media (max-width:840px){
     .hero-in{ grid-template-columns:1fr; gap:30px; padding:46px 22px 50px; }
     .hero h1{ font-size:2.1rem; }
@@ -223,10 +236,10 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
       <p class="trustline"><b>Free for clinical use</b> · works offline · 22 languages · no account, no telemetry</p>
     </div>
     <div class="shot">
-      <img class="m-desk m-desk1" src="/img/screenshot-plan.png" alt="Skeletal Plan on a desktop monitor: a pedicle subtraction osteotomy plan with the operative record and a live implant inventory" loading="eager" width="1700">
-      <img class="m-desk m-desk2" src="/img/screenshot-portrait.png" alt="Skeletal Plan on a portrait second monitor in a dual-screen theatre display: the operative record with the planned construct shown in teal" loading="lazy" width="760">
-      <div class="dev dev-pad m-pad"><img src="/img/screenshot-ipad.png" alt="Skeletal Plan on iPad: a cervical corpectomy with a reconstruction cage" loading="lazy" width="838"></div>
-      <div class="dev dev-phone m-phone1"><img src="/img/screenshot-phone.png" alt="Skeletal Plan on iPhone: a scoliosis instrumentation plan" loading="lazy" width="517"></div>
+      <img class="m-desk m-desk1 zoomable" src="/img/screenshot-plan.png" alt="Skeletal Plan on a desktop monitor: a pedicle subtraction osteotomy plan with the operative record and a live implant inventory" loading="eager" width="1700">
+      <img class="m-desk m-desk2 zoomable" src="/img/screenshot-portrait.png" alt="Skeletal Plan on a portrait second monitor in a dual-screen theatre display: the operative record with the planned construct shown in teal" loading="lazy" width="1600">
+      <div class="dev dev-pad m-pad"><img class="zoomable" src="/img/screenshot-ipad.png" alt="Skeletal Plan on iPad: a cervical corpectomy with a reconstruction cage" loading="lazy" width="838"></div>
+      <div class="dev dev-phone m-phone1"><img class="zoomable" src="/img/screenshot-phone.png" alt="Skeletal Plan on iPhone: a scoliosis instrumentation plan" loading="lazy" width="517"></div>
     </div>
   </div>
 </header>
@@ -466,6 +479,24 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
       ios:     "Detected <b>iPhone / iPad</b>. Use it in Safari (Add to Home Screen); the native app is in testing."
     };
     if (det) det.innerHTML = msg[plat] || msg.web;
+  })();
+</script>
+
+<div id="lightbox" aria-hidden="true" role="dialog" aria-label="Enlarged screenshot">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <img alt="">
+</div>
+<script>
+  // Click any .zoomable screenshot to open it full-resolution in a floating viewer.
+  (function () {
+    var lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img');
+    function open(src, alt) { lbImg.src = src; lbImg.alt = alt || ''; lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); }
+    function close() { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); lbImg.removeAttribute('src'); }
+    document.querySelectorAll('.zoomable').forEach(function (img) {
+      img.addEventListener('click', function () { open(img.getAttribute('data-full') || img.currentSrc || img.src, img.alt); });
+    });
+    lb.addEventListener('click', close);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
   })();
 </script>
 </body>
