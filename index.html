@@ -60,14 +60,17 @@
   .trustline{ margin-top:20px; color:#7e8ea0; font-size:.82rem; }
   .trustline b{ color:#aab8c8; font-weight:600; }
 
-  .shot{ position:relative; }
-  .shot .desk{ width:100%; border-radius:12px; border:1px solid #28384b; box-shadow:0 26px 60px -24px rgba(0,0,0,.7); display:block; }
-  .shot .phone{ position:absolute; right:-6px; bottom:-24px; width:26%; min-width:116px; border-radius:16px; border:3px solid #1c2c3e; box-shadow:0 20px 40px -14px rgba(0,0,0,.65); }
+  .shot{ position:relative; width:100%; aspect-ratio:1 / 0.84; }
+  .shot img{ position:absolute; border-radius:10px; box-shadow:0 22px 48px -22px rgba(0,0,0,.62); display:block; }
+  .m-desk{ top:0; right:0; width:88%; border:1px solid #28384b; z-index:1; }
+  .m-pad{ bottom:0; left:0; width:31%; border:3px solid #1c2c3e; border-radius:14px; z-index:3; }
+  .m-phone{ width:21.5%; border:3px solid #1c2c3e; border-radius:16px; }
+  .m-phone1{ bottom:-3%; left:27%; z-index:4; }
+  .m-phone2{ bottom:7%; left:48%; z-index:2; }
   @media (max-width:840px){
-    .hero-in{ grid-template-columns:1fr; gap:36px; padding:46px 22px 50px; }
+    .hero-in{ grid-template-columns:1fr; gap:30px; padding:46px 22px 50px; }
     .hero h1{ font-size:2.1rem; }
-    .shot{ max-width:520px; }
-    .shot .phone{ bottom:-16px; }
+    .shot{ max-width:580px; margin:0 auto; }
   }
 
   .wrap{ max-width:1000px; margin:0 auto; padding:0 24px; }
@@ -138,6 +141,8 @@
   .code img{ display:block; margin:0 auto; height:118px; width:auto; max-width:90vw; }
   .code .cap{ margin-top:11px; font-size:.82rem; font-weight:700; color:var(--ink); }
   .code .sym{ margin-top:1px; font-size:.66rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .code-stack{ display:flex; flex-direction:column; gap:9px; }
+  .code-stack img{ height:86px; }
   .scan-strip .caption{ margin:22px auto 16px; max-width:56ch; color:var(--muted); font-size:.9rem; }
   .lead-p{ color:var(--body); font-size:1rem; margin:0 0 14px; max-width:62ch; }
   .pill{ display:inline-block; background:var(--accent-soft); color:var(--accent-d); font-size:.68rem; font-weight:700; padding:3px 9px; border-radius:999px; vertical-align:middle; letter-spacing:.03em; text-transform:uppercase; }
@@ -205,22 +210,16 @@
       <p class="trustline"><b>Free for clinical use</b> · works offline · 22 languages · no account, no telemetry</p>
     </div>
     <div class="shot">
-      <img class="desk" src="/img/screenshot-plan.png" alt="Skeletal Plan showing a pedicle subtraction osteotomy plan and operative record" loading="eager" width="1500">
-      <img class="phone" src="/img/screenshot-phone.png" alt="Skeletal Plan on iPhone showing a scoliosis construct" loading="lazy" width="820">
+      <img class="m-desk" src="/img/screenshot-plan.png" alt="Skeletal Plan on a laptop: a pedicle subtraction osteotomy plan with the operative record and a live implant inventory" loading="eager" width="1700">
+      <img class="m-pad" src="/img/screenshot-ipad.png" alt="Skeletal Plan on iPad: a cervical corpectomy with a reconstruction cage" loading="lazy" width="838">
+      <img class="m-phone m-phone1" src="/img/screenshot-phone.png" alt="Skeletal Plan on iPhone: a scoliosis instrumentation plan" loading="lazy" width="517">
+      <img class="m-phone m-phone2" src="/img/screenshot-final-phone.png" alt="Skeletal Plan on iPhone: the final operative record with planned implants shown as teal ghosts" loading="lazy" width="528">
     </div>
   </div>
 </header>
 
 <main>
 
-  <section class="block showcase">
-    <div class="wrap">
-      <div class="showcase-row">
-        <img class="sc-pad" src="/img/screenshot-ipad.png" alt="A cervical corpectomy planned on iPad in Skeletal Plan, with the plan and the operative record side by side and a live implant inventory" loading="lazy" width="1700">
-        <img class="sc-phone" src="/img/screenshot-final-phone.png" alt="The final operative record on iPhone, with the planned-but-unplaced implants shown as teal ghosts awaiting confirmation, on a second screen in portrait" loading="lazy" width="528">
-      </div>
-    </div>
-  </section>
 
   <section class="block" id="how">
     <div class="wrap">
@@ -256,9 +255,12 @@
         <div class="codes">
           <div class="code"><img src="/img/barcode-datamatrix.svg" alt="Sample implant barcode (GS1 DataMatrix)" loading="lazy"></div>
           <div class="code"><img src="/img/barcode-gs1-128.svg" alt="Sample implant barcode (GS1-128)" loading="lazy"></div>
-          <div class="code"><img src="/img/barcode-hibc.svg" alt="Sample implant barcode (HIBC)" loading="lazy"></div>
+          <div class="code code-stack">
+            <img src="/img/barcode-hibc.svg" alt="Sample implant barcode (HIBC primary, product)" loading="lazy">
+            <img src="/img/barcode-hibc-secondary.svg" alt="Sample implant barcode (HIBC secondary, lot and expiry)" loading="lazy">
+          </div>
         </div>
-        <p class="caption">Three real implant barcodes. Scan one with Skeletal Plan to see exactly what it is: the system, size, lot and expiry. Open the sample sheet for the full set of test codes.</p>
+        <p class="caption">Real implant barcodes: GS1 DataMatrix, GS1-128 and a two-part HIBC (primary, then lot and expiry). Scan any with Skeletal Plan to see exactly what it is: the system, size, lot and expiry. Open the sample sheet for the full set of test codes.</p>
         <a class="btn btn-primary" href="/spine/scan-test.html">Open the sample barcode sheet</a>
       </div>
     </div>
@@ -346,7 +348,7 @@
         <h2 class="sec">Spinal Instrumentation Plan &amp; Record <span class="pill">Free</span></h2>
         <p class="sec-sub">Leeds Spinal Instrumentation Plan and Record · v3.50.03-beta</p>
       </div>
-      <p class="lead-p">A digital documentation tool for spinal surgery instrumentation. It records the pre-operative plan and post-operative construct, replacing hand-drawn diagrams with a structured, exportable format that works in any modern browser on connected hospital computers, with phone apps and an offline build for when there is no network.</p>
+      <p class="lead-p">A digital documentation tool for spinal surgery instrumentation. It records the pre-operative plan and the post-operative construct, replacing hand-drawn diagrams with a structured, exportable format. It works in any modern browser on connected hospital computers, with phone apps and an offline build for when there is no network.</p>
       <p class="callout amber">Documentation tool, not a medical device. Not approved, cleared, or certified by MHRA, EU MDR notified bodies, or the FDA.</p>
       <p class="callout blue">Population-based reference data from published literature is provided for convenience. The operating surgeon must verify all values against the patient's anatomy and imaging.</p>
 
