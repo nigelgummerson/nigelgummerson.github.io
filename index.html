@@ -253,7 +253,7 @@
     <div class="wrap">
       <div class="sec-head">
         <h2 class="sec">Get Skeletal Plan</h2>
-        <p class="sec-sub">It runs in any browser — that's the main way to use it. Native and offline builds are available too.</p>
+        <p class="sec-sub">It runs in any browser — that's the main way to use it, on desktop and laptop. Phone apps and an offline file are also available.</p>
       </div>
       <p class="detect" id="detect">Use it in your browser, or pick a build below.</p>
       <div class="web-row">
@@ -282,18 +282,16 @@
           <span class="tag here">Your device</span>
           <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.36 1.43c0 1.13-.46 2.2-1.2 3-.79.85-2.07 1.5-3.17 1.4-.13-1.08.42-2.25 1.15-3.03.8-.85 2.2-1.48 3.22-1.37zM20.78 17.2c-.55 1.26-.81 1.82-1.52 2.94-.98 1.55-2.37 3.48-4.1 3.49-1.53.02-1.92-1-4-1-2.08.02-2.51 1.02-4.04 1-1.72-.02-3.03-1.76-4.02-3.31C.46 17.86-.2 13.1 1.42 10.36c1.15-1.95 2.97-3.09 4.68-3.09 1.74 0 2.83 1.01 4.27 1.01 1.39 0 2.24-1.01 4.26-1.01 1.52 0 3.13.83 4.28 2.26-3.76 2.07-3.15 7.44.76 8.66z"/></svg></span>
           <h3>macOS</h3>
-          <p class="plat-sub">Desktop app (.dmg), Apple Silicon. For most uses the browser version is recommended — it's the same app, no install.</p>
-          <a class="act line" href="https://github.com/nigelgummerson/spine/releases/download/native-preview/Skeletal-Plan-3.50.3-macos-arm64.dmg">Download for Mac</a>
-          <p class="fine warn">Unsigned preview — first launch: right-click &rarr; Open.</p>
+          <p class="plat-sub">There's no separate Mac app — by design. On a Mac, use Skeletal Plan in your browser: it updates itself and always carries the latest implant catalogue. A downloaded desktop app would only go stale, with no way to update it.</p>
+          <a class="act line" href="/spine/">Open in your browser</a>
         </div>
 
         <div class="dl" data-platform="windows">
           <span class="tag here">Your device</span>
           <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5l8-1.1V11H3V5.5zM11.8 4.3L21 3v8H11.8V4.3zM3 12.5h8v6.6l-8-1.1v-5.5zM11.8 12.5H21V21l-9.2-1.3v-7.2z"/></svg></span>
           <h3>Windows</h3>
-          <p class="plat-sub">Installer (.exe) for Windows 10 / 11. For most uses the browser version is recommended — it's the same app, no install.</p>
-          <a class="act line" href="https://github.com/nigelgummerson/spine/releases/download/native-preview/Skeletal-Plan-3.50.3-windows-x64-setup.exe">Download for Windows</a>
-          <p class="fine warn">Unsigned preview — SmartScreen &rarr; &ldquo;More info &rarr; Run anyway&rdquo;.</p>
+          <p class="plat-sub">There's no separate Windows app — by design. On a PC, use Skeletal Plan in your browser: it updates itself and always carries the latest implant catalogue. A downloaded desktop app would only go stale, with no way to update it.</p>
+          <a class="act line" href="/spine/">Open in your browser</a>
         </div>
 
         <div class="dl muted" data-platform="ios">
@@ -426,8 +424,14 @@
     var card = document.querySelector('.dl[data-platform="' + plat + '"]');
     if (card && plat !== 'ios') card.classList.add('here-on');
     var det = document.getElementById('detect');
-    var names = { web:'your browser', android:'Android', mac:'macOS', windows:'Windows', ios:'iPhone / iPad' };
-    if (det) det.innerHTML = "Detected <b>" + (names[plat] || 'your device') + "</b> — but the browser app works everywhere.";
+    var msg = {
+      web:     "Skeletal Plan runs right here in your browser — no install needed.",
+      mac:     "Detected <b>macOS</b> — use Skeletal Plan in your browser. There's no separate Mac app, by design.",
+      windows: "Detected <b>Windows</b> — use Skeletal Plan in your browser. There's no separate Windows app, by design.",
+      android: "Detected <b>Android</b> — install the test app below, or just use the browser.",
+      ios:     "Detected <b>iPhone / iPad</b> — use it in Safari (Add to Home Screen); the native app is in testing."
+    };
+    if (det) det.innerHTML = msg[plat] || msg.web;
   })();
 </script>
 </body>
