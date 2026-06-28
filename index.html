@@ -126,11 +126,10 @@
   .step ul li::before{ content:""; position:absolute; left:2px; top:.6em; width:5px; height:5px; border-radius:50%; background:var(--accent); }
   @media (max-width:740px){ .how-grid{ grid-template-columns:1fr; gap:18px; } }
   .scan-strip{ margin-top:30px; border:1px solid var(--line); border-radius:14px; background:var(--soft); padding:26px; text-align:center; }
-  .codes{ display:flex; align-items:flex-end; justify-content:center; gap:32px; flex-wrap:wrap; }
-  .code img{ display:block; margin:0 auto; }
-  .code.wide img{ width:212px; max-width:78vw; height:auto; }
-  .code.square img{ height:104px; width:auto; }
-  .code .cap{ margin-top:8px; font-size:.7rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .codes{ display:flex; align-items:flex-start; justify-content:center; gap:34px; flex-wrap:wrap; }
+  .code img{ display:block; margin:0 auto; height:118px; width:auto; max-width:90vw; }
+  .code .cap{ margin-top:11px; font-size:.82rem; font-weight:700; color:var(--ink); }
+  .code .sym{ margin-top:1px; font-size:.66rem; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
   .scan-strip .caption{ margin:22px auto 16px; max-width:56ch; color:var(--muted); font-size:.9rem; }
   .lead-p{ color:var(--body); font-size:1rem; margin:0 0 14px; max-width:62ch; }
   .pill{ display:inline-block; background:var(--accent-soft); color:var(--accent-d); font-size:.68rem; font-weight:700; padding:3px 9px; border-radius:999px; vertical-align:middle; letter-spacing:.03em; text-transform:uppercase; }
@@ -222,8 +221,8 @@
         </div>
         <div class="step">
           <span class="n">2</span>
-          <h3>Scan</h3>
-          <p>Scan the implants you actually used. It reads the three hospital barcode types and fills in the system, size, lot and expiry automatically.</p>
+          <h3>Scan — or just record</h3>
+          <p>Record the implants you used. Scan the barcodes to auto-fill the system, size, lot and expiry — or simply enter the sizes by hand, which is just as quick when screws come on a non-sterile tray with no packaging to scan.</p>
         </div>
         <div class="step">
           <span class="n">3</span>
@@ -240,11 +239,11 @@
 
       <div class="scan-strip">
         <div class="codes">
-          <div class="code wide"><img src="/img/barcode-gs1-128.svg" alt="GS1-128 barcode" loading="lazy"><div class="cap">GS1-128</div></div>
-          <div class="code square"><img src="/img/barcode-datamatrix.svg" alt="GS1 DataMatrix code" loading="lazy"><div class="cap">GS1 DataMatrix</div></div>
-          <div class="code wide"><img src="/img/barcode-hibc.svg" alt="HIBC Code 128 barcode" loading="lazy"><div class="cap">HIBC</div></div>
+          <div class="code"><img src="/img/barcode-datamatrix.svg" alt="GS1 DataMatrix for a Medtronic Solera pedicle screw" loading="lazy"><div class="cap">Medtronic Solera</div><div class="sym">GS1 DataMatrix</div></div>
+          <div class="code"><img src="/img/barcode-gs1-128.svg" alt="GS1-128 barcode for a DePuy TriALTIS pedicle screw" loading="lazy"><div class="cap">DePuy TriALTIS</div><div class="sym">GS1-128</div></div>
+          <div class="code"><img src="/img/barcode-hibc.svg" alt="HIBC barcode for a Stryker Xia 3 pedicle screw" loading="lazy"><div class="cap">Stryker Xia 3</div><div class="sym">HIBC</div></div>
         </div>
-        <p class="caption">These three are examples. Open the sample sheet for a full set of test barcodes, then scan them with Skeletal Plan to watch it fill in the implant, size, lot and expiry.</p>
+        <p class="caption">Real barcodes from three pedicle screws — point Skeletal Plan's camera at any of them and it fills in the system, size, lot and expiry. Open the sample sheet for the full set of test codes.</p>
         <a class="btn btn-primary" href="/spine/scan-test.html">Open the sample barcode sheet</a>
       </div>
     </div>
