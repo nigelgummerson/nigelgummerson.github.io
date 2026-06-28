@@ -162,10 +162,11 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
 
   /* How it works: Plan / Scan / Keep */
   .how-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .step{ display:grid; grid-template-columns:auto 1fr; column-gap:11px; align-items:center; }
   .step .n{ display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:8px; background:var(--accent-soft); color:var(--accent-d); font-weight:800; font-size:.9rem; }
-  .step h3{ font-size:1.08rem; margin:12px 0 6px; }
-  .step p{ color:var(--body); font-size:.9rem; }
-  .step ul{ list-style:none; margin:10px 0 0; }
+  .step h3{ font-size:1.08rem; margin:0; }
+  .step p{ color:var(--body); font-size:.9rem; grid-column:1 / -1; margin-top:12px; }
+  .step ul{ list-style:none; margin:12px 0 0; grid-column:1 / -1; }
   .step ul li{ position:relative; padding-left:18px; font-size:.88rem; color:var(--body); margin-bottom:6px; }
   .step ul li::before{ content:""; position:absolute; left:2px; top:.6em; width:5px; height:5px; border-radius:50%; background:var(--accent); }
   @media (max-width:740px){ .how-grid{ grid-template-columns:1fr; gap:18px; } }
@@ -177,7 +178,7 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   .code-stack{ display:flex; flex-direction:column; gap:9px; }
   .code-stack img{ height:86px; }
   .scan-strip .caption{ margin:22px auto 16px; max-width:56ch; color:var(--muted); font-size:.9rem; }
-  .lead-p{ color:var(--body); font-size:1rem; margin:0 0 14px; max-width:62ch; }
+  .lead-p{ color:var(--body); font-size:1rem; margin:0 0 14px; }
   .pill{ display:inline-block; background:var(--accent-soft); color:var(--accent-d); font-size:.68rem; font-weight:700; padding:3px 9px; border-radius:999px; vertical-align:middle; letter-spacing:.03em; text-transform:uppercase; }
   .callout{ border-radius:8px; padding:13px 16px; font-size:.86rem; line-height:1.5; margin-top:14px; }
   .callout.amber{ background:#fdf6e3; border:1px solid #f3e2b3; color:#7c5a13; }
