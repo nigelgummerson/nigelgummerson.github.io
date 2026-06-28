@@ -44,7 +44,11 @@
   .eyebrow{ text-transform:uppercase; letter-spacing:.14em; font-size:.72rem; font-weight:700; color:#5fb6ac; margin-bottom:16px; }
   .hero h1{ color:#fff; font-size:2.55rem; line-height:1.08; }
   .hero h1 .dim{ color:#7f93a8; }
-  .hero .lead{ margin-top:18px; color:#b8c4d2; font-size:1.04rem; max-width:31em; }
+  .hero .tagline{ margin-top:10px; font-size:1.2rem; font-weight:700; color:#5fb6ac; letter-spacing:-.01em; }
+  .hero .lead{ margin-top:14px; color:#b8c4d2; font-size:1.04rem; max-width:32em; }
+  .showcase{ text-align:center; }
+  .showcase img{ width:100%; max-width:980px; border-radius:14px; border:1px solid var(--line); box-shadow:0 22px 55px -30px rgba(0,0,0,.5); }
+  .showcase .cap{ margin-top:16px; color:var(--muted); font-size:.9rem; max-width:62ch; margin-left:auto; margin-right:auto; }
   .hero-cta{ margin-top:28px; display:flex; gap:13px; flex-wrap:wrap; align-items:center; }
   .btn{ display:inline-flex; align-items:center; gap:9px; padding:13px 24px; border-radius:9px; text-decoration:none; font-size:.95rem; font-weight:600; border:1px solid transparent; font-family:var(--sans); cursor:pointer; }
   .btn-primary{ background:var(--accent); color:#fff; }
@@ -187,9 +191,10 @@
 <header class="hero">
   <div class="hero-in">
     <div class="hero-copy">
-      <p class="eyebrow">Spinal instrumentation · plan &amp; record</p>
-      <h1>Plan it. Scan it. <span class="dim">Keep it.</span></h1>
-      <p class="lead">A pre-operative planning and operative-record tool for spinal surgeons. Design the construct, scan the implants you used, and keep a structured, exportable record. It runs in your browser on any device.</p>
+      <p class="eyebrow">A planning tool for spine surgeons</p>
+      <h1>Pre-operative planning for spinal surgery</h1>
+      <p class="tagline">Plan it. Scan it. Keep it.</p>
+      <p class="lead">Skeletal Plan helps spine surgeons plan spinal instrumentation, scan the implants used, and keep a structured operative record. It runs in your browser on any device.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="/spine/">Open Skeletal Plan</a>
         <a class="btn btn-ghost" href="#download">Downloads</a>
@@ -204,6 +209,13 @@
 </header>
 
 <main>
+
+  <section class="block showcase">
+    <div class="wrap">
+      <img src="/img/screenshot-ipad.png" alt="A cervical corpectomy planned on iPad in Skeletal Plan, with the plan and operative record side by side and a live implant inventory" loading="lazy" width="1700">
+      <p class="cap">A cervical corpectomy on iPad: the plan and the operative record side by side, with a live implant inventory.</p>
+    </div>
+  </section>
 
   <section class="block" id="how">
     <div class="wrap">
