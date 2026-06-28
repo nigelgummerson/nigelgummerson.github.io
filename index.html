@@ -60,17 +60,25 @@
   .trustline{ margin-top:20px; color:#7e8ea0; font-size:.82rem; }
   .trustline b{ color:#aab8c8; font-weight:600; }
 
-  .shot{ position:relative; width:100%; aspect-ratio:1 / 0.84; }
-  .shot img{ position:absolute; border-radius:10px; box-shadow:0 22px 48px -22px rgba(0,0,0,.62); display:block; }
-  .m-desk{ top:0; right:0; width:88%; border:1px solid #28384b; z-index:1; }
-  .m-pad{ bottom:0; left:0; width:31%; border:3px solid #1c2c3e; border-radius:14px; z-index:3; }
-  .m-phone{ width:21.5%; border:3px solid #1c2c3e; border-radius:16px; }
-  .m-phone1{ bottom:-3%; left:27%; z-index:4; }
-  .m-phone2{ bottom:7%; left:48%; z-index:2; }
+  .shot{ position:relative; width:100%; aspect-ratio:1 / 0.92; }
+  /* Desktops are monitors: square corners (tiny radius), thin frame */
+  .m-desk{ position:absolute; width:64%; border:1px solid #2a3a4d; border-radius:4px; box-shadow:0 20px 44px -22px rgba(0,0,0,.6); display:block; }
+  .m-desk1{ top:0; left:0; z-index:1; }
+  .m-desk2{ top:9%; right:0; z-index:2; }
+  /* iPad/iPhone are devices: a dark bezel frame is the safe zone, so the
+     rounded corners no longer clip the full-bleed screenshot content. */
+  .dev{ position:absolute; background:#0e141b; box-shadow:0 22px 46px -20px rgba(0,0,0,.66); }
+  .dev img{ display:block; width:100%; }
+  .dev-pad{ border-radius:16px; padding:7px; }
+  .dev-pad img{ border-radius:9px; }
+  .dev-phone{ border-radius:22px; padding:6px; }
+  .dev-phone img{ border-radius:16px; }
+  .m-pad{ bottom:0; left:5%; width:27%; z-index:4; }
+  .m-phone1{ bottom:-2%; left:33%; width:18%; z-index:5; }
   @media (max-width:840px){
     .hero-in{ grid-template-columns:1fr; gap:30px; padding:46px 22px 50px; }
     .hero h1{ font-size:2.1rem; }
-    .shot{ max-width:580px; margin:0 auto; }
+    .shot{ max-width:600px; margin:0 auto; }
   }
 
   .wrap{ max-width:1000px; margin:0 auto; padding:0 24px; }
@@ -210,10 +218,10 @@
       <p class="trustline"><b>Free for clinical use</b> · works offline · 22 languages · no account, no telemetry</p>
     </div>
     <div class="shot">
-      <img class="m-desk" src="/img/screenshot-plan.png" alt="Skeletal Plan on a laptop: a pedicle subtraction osteotomy plan with the operative record and a live implant inventory" loading="eager" width="1700">
-      <img class="m-pad" src="/img/screenshot-ipad.png" alt="Skeletal Plan on iPad: a cervical corpectomy with a reconstruction cage" loading="lazy" width="838">
-      <img class="m-phone m-phone1" src="/img/screenshot-phone.png" alt="Skeletal Plan on iPhone: a scoliosis instrumentation plan" loading="lazy" width="517">
-      <img class="m-phone m-phone2" src="/img/screenshot-final-phone.png" alt="Skeletal Plan on iPhone: the final operative record with planned implants shown as teal ghosts" loading="lazy" width="528">
+      <img class="m-desk m-desk1" src="/img/screenshot-plan.png" alt="Skeletal Plan on a desktop monitor: a pedicle subtraction osteotomy plan with the operative record and a live implant inventory" loading="eager" width="1700">
+      <img class="m-desk m-desk2" src="/img/screenshot-second.png" alt="Skeletal Plan on a second monitor in a dual-screen theatre display: the final operative record with the planned implants shown in teal" loading="lazy" width="1700">
+      <div class="dev dev-pad m-pad"><img src="/img/screenshot-ipad.png" alt="Skeletal Plan on iPad: a cervical corpectomy with a reconstruction cage" loading="lazy" width="838"></div>
+      <div class="dev dev-phone m-phone1"><img src="/img/screenshot-phone.png" alt="Skeletal Plan on iPhone: a scoliosis instrumentation plan" loading="lazy" width="517"></div>
     </div>
   </div>
 </header>
