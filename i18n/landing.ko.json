@@ -81,5 +81,6 @@
   "hl-theatre-title": "수술실을 위한 설계",
   "hl-theatre-desc": "오프라인으로 작동하며, 텔레메트리나 계정 없이 기본적으로 비공개입니다.",
   "about-guide-link": "전체 기능 가이드 보기 →",
-  "footer-text": "영국 Leeds에서 개발되었습니다. 이중 라이선스(임상용 무료 / 상업용). 배포는 <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>를 통해 이루어집니다."
+  "footer-text": "영국 Leeds에서 개발되었습니다. 이중 라이선스(임상용 무료 / 상업용). 배포는 <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>를 통해 이루어집니다.",
+  "footer-privacy": "개인정보처리방침"
 }

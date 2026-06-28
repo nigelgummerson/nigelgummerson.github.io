@@ -81,5 +81,6 @@
   "hl-theatre-title": "手術室のために設計",
   "hl-theatre-desc": "オフラインで動作し、テレメトリやアカウントなしで、デフォルトでプライバシーを保護します。",
   "about-guide-link": "機能ガイドの全体を見る →",
-  "footer-text": "英国 Leeds で開発。デュアルライセンス（臨床利用無料 / 商用）。配布は <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a> 経由。"
+  "footer-text": "英国 Leeds で開発。デュアルライセンス（臨床利用無料 / 商用）。配布は <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a> 経由。",
+  "footer-privacy": "プライバシーポリシー"
 }

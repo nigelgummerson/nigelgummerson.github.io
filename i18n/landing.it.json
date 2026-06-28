@@ -81,5 +81,6 @@
   "hl-theatre-title": "Pensato per la sala operatoria",
   "hl-theatre-desc": "Funziona offline ed è privato per impostazione predefinita, senza telemetria né account.",
   "about-guide-link": "Vedi la guida completa alle funzioni →",
-  "footer-text": "Sviluppato a Leeds, Regno Unito. Doppia licenza (Uso Clinico Gratuito / Commerciale). Distribuzione tramite <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>."
+  "footer-text": "Sviluppato a Leeds, Regno Unito. Doppia licenza (Uso Clinico Gratuito / Commerciale). Distribuzione tramite <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>.",
+  "footer-privacy": "Informativa sulla privacy"
 }

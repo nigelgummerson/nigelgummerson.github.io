@@ -81,5 +81,6 @@
   "hl-theatre-title": "Gebouwd voor de OK",
   "hl-theatre-desc": "Werkt offline en standaard privé zonder telemetrie of accounts.",
   "about-guide-link": "Bekijk de volledige functiegids →",
-  "footer-text": "Ontwikkeld in Leeds, Verenigd Koninkrijk. Dubbel gelicentieerd (Gratis Klinisch Gebruik / Commercieel). Distributie via <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>."
+  "footer-text": "Ontwikkeld in Leeds, Verenigd Koninkrijk. Dubbel gelicentieerd (Gratis Klinisch Gebruik / Commercieel). Distributie via <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>.",
+  "footer-privacy": "Privacybeleid"
 }

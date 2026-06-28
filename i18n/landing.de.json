@@ -81,5 +81,6 @@
   "hl-theatre-title": "Für den OP gemacht",
   "hl-theatre-desc": "Funktioniert offline und ist standardmäßig privat, ohne Telemetrie oder Konten.",
   "about-guide-link": "Zur vollständigen Funktionsanleitung →",
-  "footer-text": "Entwickelt in Leeds, Vereinigtes Königreich. Doppellizenziert (kostenlose klinische Nutzung / kommerziell). Vertrieb über <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>."
+  "footer-text": "Entwickelt in Leeds, Vereinigtes Königreich. Doppellizenziert (kostenlose klinische Nutzung / kommerziell). Vertrieb über <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>.",
+  "footer-privacy": "Datenschutzerklärung"
 }

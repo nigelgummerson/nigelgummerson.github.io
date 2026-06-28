@@ -81,5 +81,6 @@
   "hl-theatre-title": "为手术室而打造",
   "hl-theatre-desc": "可离线运行，默认保护隐私，无遥测、无账户。",
   "about-guide-link": "查看完整功能指南 →",
-  "footer-text": "在英国 Leeds 开发。双重许可（临床使用免费 / 商业）。通过 <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a> 分发。"
+  "footer-text": "在英国 Leeds 开发。双重许可（临床使用免费 / 商业）。通过 <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a> 分发。",
+  "footer-privacy": "隐私政策"
 }

@@ -81,5 +81,6 @@
   "hl-theatre-title": "Ameliyathane için tasarlandı",
   "hl-theatre-desc": "Çevrimdışı çalışır ve telemetri veya hesap olmadan varsayılan olarak özeldir.",
   "about-guide-link": "Tam özellik kılavuzuna bakın →",
-  "footer-text": "Leeds, Birleşik Krallık'ta geliştirildi. Çift lisanslı (Ücretsiz Klinik Kullanım / Ticari). Dağıtım <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a> üzerinden."
+  "footer-text": "Leeds, Birleşik Krallık'ta geliştirildi. Çift lisanslı (Ücretsiz Klinik Kullanım / Ticari). Dağıtım <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a> üzerinden.",
+  "footer-privacy": "Gizlilik politikası"
 }

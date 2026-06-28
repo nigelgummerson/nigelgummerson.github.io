@@ -81,5 +81,6 @@
   "hl-theatre-title": "Создано для операционной",
   "hl-theatre-desc": "Работает офлайн и конфиденциально по умолчанию, без телеметрии и аккаунтов.",
   "about-guide-link": "Полное руководство по функциям →",
-  "footer-text": "Разработано в Leeds, Великобритания. Двойное лицензирование (бесплатное клиническое использование / коммерческое). Распространение через <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>."
+  "footer-text": "Разработано в Leeds, Великобритания. Двойное лицензирование (бесплатное клиническое использование / коммерческое). Распространение через <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>.",
+  "footer-privacy": "Политика конфиденциальности"
 }

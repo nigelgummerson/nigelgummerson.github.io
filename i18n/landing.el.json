@@ -81,5 +81,6 @@
   "hl-theatre-title": "Σχεδιασμένο για το χειρουργείο",
   "hl-theatre-desc": "Λειτουργεί εκτός σύνδεσης και είναι ιδιωτικό από προεπιλογή, χωρίς τηλεμετρία ή λογαριασμούς.",
   "about-guide-link": "Δείτε τον πλήρη οδηγό χαρακτηριστικών →",
-  "footer-text": "Αναπτύχθηκε στο Leeds, Ηνωμένο Βασίλειο. Διπλή άδεια (Δωρεάν Κλινική Χρήση / Εμπορική). Διανομή μέσω <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>."
+  "footer-text": "Αναπτύχθηκε στο Leeds, Ηνωμένο Βασίλειο. Διπλή άδεια (Δωρεάν Κλινική Χρήση / Εμπορική). Διανομή μέσω <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>.",
+  "footer-privacy": "Πολιτική απορρήτου"
 }

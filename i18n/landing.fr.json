@@ -81,5 +81,6 @@
   "hl-theatre-title": "Conçu pour le bloc",
   "hl-theatre-desc": "Fonctionne hors ligne, et privé par défaut, sans télémétrie ni compte.",
   "about-guide-link": "Voir le guide complet des fonctionnalités →",
-  "footer-text": "Développé à Leeds, Royaume-Uni. Sous double licence (usage clinique gratuit / commercial). Distribution via <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>."
+  "footer-text": "Développé à Leeds, Royaume-Uni. Sous double licence (usage clinique gratuit / commercial). Distribution via <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a>.",
+  "footer-privacy": "Politique de confidentialité"
 }

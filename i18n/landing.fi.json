@@ -81,5 +81,6 @@
   "hl-theatre-title": "Tehty leikkaussaliin",
   "hl-theatre-desc": "Toimii offline-tilassa ja on yksityinen oletuksena ilman telemetriaa tai tilejä.",
   "about-guide-link": "Katso täysi ominaisuusopas →",
-  "footer-text": "Kehitetty Leedsissä, Yhdistyneessä kuningaskunnassa. Kaksoislisensoitu (Maksuton kliininen käyttö / Kaupallinen). Jakelu <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a> -palvelun kautta."
+  "footer-text": "Kehitetty Leedsissä, Yhdistyneessä kuningaskunnassa. Kaksoislisensoitu (Maksuton kliininen käyttö / Kaupallinen). Jakelu <a href=\"https://github.com/nigelgummerson/spine/releases\">GitHub Releases</a> -palvelun kautta.",
+  "footer-privacy": "Tietosuojakäytäntö"
 }
