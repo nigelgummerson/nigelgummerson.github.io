@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "3EQS3SS2BC.com.skeletalsurgery.spineplanner",
+        "paths": [ "/spine/*" ]
+      }
+    ]
+  }
+}
