@@ -24,6 +24,7 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
 <meta name="twitter:description" content="Free tools for spinal surgeons to plan and record instrumentation surgery. Plan the construct, scan the implants, keep a structured operative record.">
 <meta name="twitter:image" content="https://plan.skeletalsurgery.com/img/og-image.png">
 <meta name="theme-color" content="#0d1b2a">
+<script src="/landing-i18n.js"></script>
 <style>
   *{ margin:0; padding:0; box-sizing:border-box; }
   :root{
@@ -79,12 +80,12 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   .cluster-label{ font-size:.62rem; letter-spacing:.13em; text-transform:uppercase; color:#7e8ea0; font-weight:600; text-align:center; }
   .mon{ border:1px solid #2a3a4d; border-radius:3px; box-shadow:0 14px 32px -18px rgba(0,0,0,.6); display:block; }
   .mon-land{ width:176px; }
-  .mon-port{ width:106px; margin-left:-24px; position:relative; z-index:2; }
+  .mon-port{ width:106px; margin-inline-start:-24px; position:relative; z-index:2; }
   .shelf-dev{ background:#0e141b; box-shadow:0 14px 32px -16px rgba(0,0,0,.66); }
   .shelf-dev img{ display:block; width:100%; }
   .shelf-pad{ border-radius:13px; padding:5px; width:116px; }
   .shelf-pad img{ border-radius:8px; }
-  .shelf-phone{ border-radius:15px; padding:5px; width:66px; margin-left:-18px; position:relative; z-index:2; }
+  .shelf-phone{ border-radius:15px; padding:5px; width:66px; margin-inline-start:-18px; position:relative; z-index:2; }
   .shelf-phone img{ border-radius:10px; }
   @media (max-width:840px){ .montage-shelf{ align-self:center; gap:30px; } }
   /* Click any screenshot to zoom (full-resolution lightbox). */
@@ -170,8 +171,11 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   .step h3{ font-size:1.08rem; margin:0; }
   .step p{ color:var(--body); font-size:.9rem; grid-column:1 / -1; margin-top:12px; }
   .step ul{ list-style:none; margin:12px 0 0; grid-column:1 / -1; }
-  .step ul li{ position:relative; padding-left:18px; font-size:.88rem; color:var(--body); margin-bottom:6px; }
-  .step ul li::before{ content:""; position:absolute; left:2px; top:.6em; width:5px; height:5px; border-radius:50%; background:var(--accent); }
+  .step ul li{ position:relative; padding-inline-start:18px; font-size:.88rem; color:var(--body); margin-bottom:6px; }
+  .step ul li::before{ content:""; position:absolute; inset-inline-start:2px; top:.6em; width:5px; height:5px; border-radius:50%; background:var(--accent); }
+  /* RTL: tracking/uppercase harm Arabic ligatures; reset for ar/he. */
+  [dir="rtl"] .eyebrow, [dir="rtl"] .cluster-label{ letter-spacing:normal; text-transform:none; }
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3{ letter-spacing:normal; }
   @media (max-width:740px){ .how-grid{ grid-template-columns:1fr; gap:18px; } }
   .scan-strip{ margin-top:30px; border:1px solid var(--line); border-radius:14px; background:var(--soft); padding:26px; text-align:center; }
   .codes{ display:flex; align-items:flex-start; justify-content:center; gap:34px; flex-wrap:wrap; }
@@ -225,26 +229,26 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
 <nav class="nav">
   <span class="brand"><img src="/img/app-icon.svg" alt="">Skeletal Plan</span>
   <span class="links">
-    <a class="hide-sm" href="#about">About</a>
-    <a class="hide-sm" href="/spine/quick-reference.html">Guide</a>
-    <a class="hide-sm" href="#manufacturers">Manufacturers</a>
+    <a class="hide-sm" href="#about" data-i18n="nav-about">About</a>
+    <a class="hide-sm" href="/spine/quick-reference.html" data-i18n="nav-guide">Guide</a>
+    <a class="hide-sm" href="#manufacturers" data-i18n="nav-manufacturers">Manufacturers</a>
     <select id="langSelect" class="lang-select" aria-label="Choose language"></select>
-    <a class="cta" href="/spine/">Open app</a>
+    <a class="cta" href="/spine/" data-i18n="nav-open-app">Open app</a>
   </span>
 </nav>
 
 <header class="hero">
   <div class="hero-in">
     <div class="hero-copy">
-      <p class="eyebrow">A planning and record tool for spine surgeons</p>
-      <h1>Plan and record spinal instrumentation surgery</h1>
-      <p class="tagline">Plan it. Scan it. Keep it.</p>
-      <p class="lead">Skeletal Plan helps spine surgeons plan spinal instrumentation, scan the implants used, and keep a structured operative record. It runs in your browser on any device.</p>
+      <p class="eyebrow" data-i18n="hero-eyebrow">A planning and record tool for spine surgeons</p>
+      <h1 data-i18n="hero-h1">Plan and record spinal instrumentation surgery</h1>
+      <p class="tagline" data-i18n="hero-tagline">Plan it. Scan it. Keep it.</p>
+      <p class="lead" data-i18n="hero-lead">Skeletal Plan helps spine surgeons plan spinal instrumentation, scan the implants used, and keep a structured operative record. It runs in your browser on any device.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="/spine/">Open Skeletal Plan</a>
-        <a class="btn btn-ghost" href="#download">Downloads</a>
+        <a class="btn btn-primary" href="/spine/" data-i18n="hero-cta-open">Open Skeletal Plan</a>
+        <a class="btn btn-ghost" href="#download" data-i18n="hero-cta-downloads">Downloads</a>
       </div>
-      <p class="trustline"><b>Free for clinical use</b> · works offline · 22 languages · no account, no telemetry</p>
+      <p class="trustline" data-i18n-html="hero-trustline"><b>Free for clinical use</b> · works offline · 22 languages · no account, no telemetry</p>
     </div>
     <div class="montage-shelf">
       <div class="cluster">
@@ -252,14 +256,14 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
           <img class="mon mon-land zoomable" src="/img/screenshot-plan.png" alt="Skeletal Plan on a desktop monitor: a pedicle subtraction osteotomy plan with the operative record and a live implant inventory" loading="eager" width="1700">
           <img class="mon mon-port zoomable" src="/img/screenshot-portrait.png" alt="Skeletal Plan on a portrait second monitor: the operative record with the planned construct shown in teal" loading="lazy" width="1600">
         </div>
-        <span class="cluster-label">Theatre monitor · single or dual screen</span>
+        <span class="cluster-label" data-i18n="montage-monitor-label">Theatre monitor · single or dual screen</span>
       </div>
       <div class="cluster">
         <div class="cluster-row">
           <div class="shelf-dev shelf-pad"><img class="zoomable" src="/img/screenshot-ipad.png" alt="Skeletal Plan on iPad: a cervical corpectomy with a reconstruction cage" loading="lazy" width="1100"></div>
           <div class="shelf-dev shelf-phone"><img class="zoomable" src="/img/screenshot-phone.png" alt="Skeletal Plan on iPhone: a scoliosis instrumentation plan" loading="lazy" width="1179"></div>
         </div>
-        <span class="cluster-label">Tablet &amp; phone</span>
+        <span class="cluster-label" data-i18n="montage-tablet-label">Tablet &amp; phone</span>
       </div>
     </div>
   </div>
@@ -271,29 +275,29 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   <section class="block" id="how">
     <div class="wrap">
       <div class="sec-head">
-        <h2 class="sec">Plan it. Scan it. Keep it.</h2>
-        <p class="sec-sub">From the pre-operative plan to a record you can use.</p>
+        <h2 class="sec" data-i18n="how-h2">Plan it. Scan it. Keep it.</h2>
+        <p class="sec-sub" data-i18n="how-sub">From the pre-operative plan to a record you can use.</p>
       </div>
       <div class="how-grid">
         <div class="step">
           <span class="n">1</span>
-          <h3>Plan</h3>
-          <p>Design the construct level by level: screws, rods, cages, osteotomies and correction forces, across normal or variant anatomy.</p>
+          <h3 data-i18n="step1-title">Plan</h3>
+          <p data-i18n="step1-p">Design the construct level by level: screws, rods, cages, osteotomies and correction forces, across normal or variant anatomy.</p>
         </div>
         <div class="step">
           <span class="n">2</span>
-          <h3>Scan, or just record</h3>
-          <p>Record the implants you used. Scan the barcodes to auto-fill the system, size, lot and expiry, or enter the sizes by hand. That is just as quick when screws come on a non-sterile tray with no packaging to scan.</p>
+          <h3 data-i18n="step2-title">Scan, or just record</h3>
+          <p data-i18n="step2-p">Record the implants you used. Scan the barcodes to auto-fill the system, size, lot and expiry, or enter the sizes by hand. That is just as quick when screws come on a non-sterile tray with no packaging to scan.</p>
         </div>
         <div class="step">
           <span class="n">3</span>
-          <h3>Keep</h3>
-          <p>Keep a clean, exportable record that stays useful long after the case:</p>
+          <h3 data-i18n="step3-title">Keep</h3>
+          <p data-i18n="step3-p">Keep a clean, exportable record that stays useful long after the case:</p>
           <ul>
-            <li>A <b>PDF</b> for the patient record and notes</li>
-            <li>An implant <b>inventory</b> for stock and cost</li>
-            <li>Lot &amp; expiry <b>traceability</b> for audit</li>
-            <li>Structured data for <b>research</b></li>
+            <li data-i18n-html="step3-li1">A <b>PDF</b> for the patient record and notes</li>
+            <li data-i18n-html="step3-li2">An implant <b>inventory</b> for stock and cost</li>
+            <li data-i18n-html="step3-li3">Lot &amp; expiry <b>traceability</b> for audit</li>
+            <li data-i18n-html="step3-li4">Structured data for <b>research</b></li>
           </ul>
         </div>
       </div>
@@ -307,8 +311,8 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
             <img src="/img/barcode-hibc-secondary.svg" alt="Sample implant barcode (HIBC secondary, lot and expiry)" loading="lazy">
           </div>
         </div>
-        <p class="caption">Real implant barcodes: GS1 DataMatrix, GS1-128 and a two-part HIBC (primary, then lot and expiry). Scan any with Skeletal Plan to see exactly what it is: the system, size, lot and expiry. Open the sample sheet for the full set of test codes.</p>
-        <a class="btn btn-primary" href="/spine/scan-test.html">Open the sample barcode sheet</a>
+        <p class="caption" data-i18n="scan-caption">Real implant barcodes: GS1 DataMatrix, GS1-128 and a two-part HIBC (primary, then lot and expiry). Scan any with Skeletal Plan to see exactly what it is: the system, size, lot and expiry. Open the sample sheet for the full set of test codes.</p>
+        <a class="btn btn-primary" href="/spine/scan-test.html" data-i18n="scan-button">Open the sample barcode sheet</a>
       </div>
     </div>
   </section>
@@ -316,52 +320,52 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   <section class="block" id="download">
     <div class="wrap">
       <div class="sec-head">
-        <h2 class="sec">Get Skeletal Plan</h2>
-        <p class="sec-sub">It runs in any browser. That is the main way to use it on desktop and laptop. Phone apps and an offline file are also available.</p>
+        <h2 class="sec" data-i18n="dl-h2">Get Skeletal Plan</h2>
+        <p class="sec-sub" data-i18n="dl-sub">It runs in any browser. That is the main way to use it on desktop and laptop. Phone apps and an offline file are also available.</p>
       </div>
-      <p class="detect" id="detect">Use it in your browser, or pick a build below.</p>
+      <p class="detect" id="detect" data-i18n="dl-detect">Use it in your browser, or pick a build below.</p>
       <div class="web-row">
         <div class="left">
           <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.7 2.5 4.1 5.8 4.1 9.2S14.7 18.7 12 21.2M12 2.8c-2.7 2.5-4.1 5.8-4.1 9.2S9.3 18.7 12 21.2"/></svg></span>
           <div>
-            <h3>Web browser <span class="pill">The full app</span></h3>
-            <p>Any modern browser, on any device. Nothing to install, always the latest version, and it keeps working offline once loaded. Add it to your home screen or desktop to pin it like an app. This is the main way to use Skeletal Plan; the options below are alternatives.</p>
+            <h3 data-i18n-html="dl-web-title">Web browser <span class="pill">The full app</span></h3>
+            <p data-i18n="dl-web-p">Any modern browser, on any device. Nothing to install, always the latest version, and it keeps working offline once loaded. Add it to your home screen or desktop to pin it like an app. This is the main way to use Skeletal Plan; the options below are alternatives.</p>
           </div>
         </div>
-        <a class="btn btn-primary" href="/spine/">Open Skeletal Plan</a>
+        <a class="btn btn-primary" href="/spine/" data-i18n="dl-web-button">Open Skeletal Plan</a>
       </div>
 
       <div class="dl-grid">
 
         <div class="dl" data-platform="android">
-          <span class="tag here">Your device</span>
+          <span class="tag here" data-i18n="dl-your-device">Your device</span>
           <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.48l1.84-3.18a.4.4 0 0 0-.7-.4l-1.86 3.23a11.4 11.4 0 0 0-9.76 0L5.26 5.9a.4.4 0 1 0-.7.4L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg></span>
-          <h3>Android</h3>
-          <p class="plat-sub">Native app (.apk). The full implant (GTIN) catalogue is bundled in the app, and barcode scanning is faster than the browser. Download on the phone and tap to install.</p>
-          <a class="act line" href="https://github.com/nigelgummerson/spine/releases/download/native-preview/Skeletal-Plan-3.50.3-android.apk">Download for Android</a>
-          <p class="fine warn">Preview: allow &ldquo;install unknown apps&rdquo; when asked.</p>
+          <h3 data-i18n="dl-android-title">Android</h3>
+          <p class="plat-sub" data-i18n="dl-android-blurb">Native app (.apk). The full implant (GTIN) catalogue is bundled in the app, and barcode scanning is faster than the browser. Download on the phone and tap to install.</p>
+          <a class="act line" href="https://github.com/nigelgummerson/spine/releases/download/native-preview/Skeletal-Plan-3.50.3-android.apk" data-i18n="dl-android-button">Download for Android</a>
+          <p class="fine warn" data-i18n="dl-android-fine">Preview: allow &ldquo;install unknown apps&rdquo; when asked.</p>
         </div>
 
         <div class="dl" data-platform="desktop">
-          <span class="tag here">Your device</span>
+          <span class="tag here" data-i18n="dl-your-device">Your device</span>
           <span class="glyphs">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.36 1.43c0 1.13-.46 2.2-1.2 3-.79.85-2.07 1.5-3.17 1.4-.13-1.08.42-2.25 1.15-3.03.8-.85 2.2-1.48 3.22-1.37zM20.78 17.2c-.55 1.26-.81 1.82-1.52 2.94-.98 1.55-2.37 3.48-4.1 3.49-1.53.02-1.92-1-4-1-2.08.02-2.51 1.02-4.04 1-1.72-.02-3.03-1.76-4.02-3.31C.46 17.86-.2 13.1 1.42 10.36c1.15-1.95 2.97-3.09 4.68-3.09 1.74 0 2.83 1.01 4.27 1.01 1.39 0 2.24-1.01 4.26-1.01 1.52 0 3.13.83 4.28 2.26-3.76 2.07-3.15 7.44.76 8.66z"/></svg>
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5l8-1.1V11H3V5.5zM11.8 4.3L21 3v8H11.8V4.3zM3 12.5h8v6.6l-8-1.1v-5.5zM11.8 12.5H21V21l-9.2-1.3v-7.2z"/></svg>
           </span>
-          <h3>Mac &amp; Windows</h3>
-          <p class="plat-sub">On a desktop or laptop, use Skeletal Plan in your browser. It's always up to date.</p>
-          <a class="act line" href="/spine/">Open in your browser</a>
+          <h3 data-i18n="dl-desktop-title">Mac &amp; Windows</h3>
+          <p class="plat-sub" data-i18n="dl-desktop-blurb">On a desktop or laptop, use Skeletal Plan in your browser. It's always up to date.</p>
+          <a class="act line" href="/spine/" data-i18n="dl-desktop-button">Open in your browser</a>
         </div>
 
         <div class="dl muted" data-platform="ios">
           <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.6 5.4h2.8"/></svg></span>
-          <h3>iPhone &amp; iPad</h3>
-          <p class="plat-sub">A native iOS build is fully functional and in internal testing with a small group. You can also use it in Safari today. Add to Home Screen to pin it as an app.</p>
-          <p class="status">In internal testing</p>
+          <h3 data-i18n="dl-ios-title">iPhone &amp; iPad</h3>
+          <p class="plat-sub" data-i18n="dl-ios-blurb">A native iOS build is fully functional and in internal testing with a small group. You can also use it in Safari today. Add to Home Screen to pin it as an app.</p>
+          <p class="status" data-i18n="dl-ios-status">In internal testing</p>
         </div>
 
       </div>
-      <p class="sec-sub" style="margin-top:18px;">Only for a PC that can never reach the network, so it can't open the web app at all. A point-in-time <a href="https://github.com/nigelgummerson/spine/releases/latest">offline single-file build</a> can be copied onto it (e.g. by USB), and re-copied to update.</p>
+      <p class="sec-sub" style="margin-top:18px;" data-i18n-html="dl-offline-note">Only for a PC that can never reach the network, so it can't open the web app at all. A point-in-time <a href="https://github.com/nigelgummerson/spine/releases/latest">offline single-file build</a> can be copied onto it (e.g. by USB), and re-copied to update.</p>
     </div>
   </section>
 
@@ -370,20 +374,20 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
       <div class="mfr">
         <div>
           <div class="sec-head" style="margin-bottom:6px;">
-            <h2 class="sec">For implant manufacturers</h2>
-            <p class="sec-sub">Get your system scanning and sizing correctly in Skeletal Plan.</p>
+            <h2 class="sec" data-i18n="mfr-h2">For implant manufacturers</h2>
+            <p class="sec-sub" data-i18n="mfr-sub">Get your system scanning and sizing correctly in Skeletal Plan.</p>
           </div>
-          <p class="lead-p">The app matches scanned implants against an offline catalogue. To add or correct your system, send us <b>both</b> of the following. Each does a different job:</p>
+          <p class="lead-p" data-i18n-html="mfr-lead">The app matches scanned implants against an offline catalogue. To add or correct your system, send us <b>both</b> of the following. Each does a different job:</p>
           <ul class="req">
-            <li><b>Surgical Technique Guides (STG)</b>: so screws, rods and cages are <b>sized</b> correctly in the planner (diameters, lengths, ordering matrix).</li>
-            <li><b>GTIN / UDI data</b>: so the physical <b>barcodes scan</b> and resolve to the right implant (GS1 and HIBC).</li>
+            <li data-i18n-html="mfr-li1"><b>Surgical Technique Guides (STG)</b>: so screws, rods and cages are <b>sized</b> correctly in the planner (diameters, lengths, ordering matrix).</li>
+            <li data-i18n-html="mfr-li2"><b>GTIN / UDI data</b>: so the physical <b>barcodes scan</b> and resolve to the right implant (GS1 and HIBC).</li>
           </ul>
-          <span class="both">Both are required: sizing needs the STG, scanning needs the GTIN.</span>
+          <span class="both" data-i18n="mfr-both">Both are required: sizing needs the STG, scanning needs the GTIN.</span>
         </div>
         <div class="mfr-card">
-          <h3>Submit your data</h3>
-          <p>Email your STGs and GTIN/UDI export and we'll add the system to the catalogue.</p>
-          <a class="btn btn-primary" href="mailto:skeletalsurgery@icloud.com?subject=Implant%20data%20submission%20(STG%20%2B%20GTIN)&amp;body=System%2Fbrand%3A%0AManufacturer%3A%0AAttached%3A%20STG(s)%20%2B%20GTIN%2FUDI%20export%20(both%20required)%0A">Email STG + GTIN data</a>
+          <h3 data-i18n="mfr-card-title">Submit your data</h3>
+          <p data-i18n="mfr-card-blurb">Email your STGs and GTIN/UDI export and we'll add the system to the catalogue.</p>
+          <a class="btn btn-primary" href="mailto:skeletalsurgery@icloud.com?subject=Implant%20data%20submission%20(STG%20%2B%20GTIN)&amp;body=System%2Fbrand%3A%0AManufacturer%3A%0AAttached%3A%20STG(s)%20%2B%20GTIN%2FUDI%20export%20(both%20required)%0A" data-i18n="mfr-card-button">Email STG + GTIN data</a>
         </div>
       </div>
     </div>
@@ -392,28 +396,28 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   <section class="block" id="about">
     <div class="wrap">
       <div class="sec-head">
-        <h2 class="sec">Spinal Instrumentation Plan &amp; Record <span class="pill">Free</span></h2>
-        <p class="sec-sub">Leeds Spinal Instrumentation Plan and Record · v3.50.03-beta</p>
+        <h2 class="sec" data-i18n-html="about-h2">Spinal Instrumentation Plan &amp; Record <span class="pill">Free</span></h2>
+        <p class="sec-sub" data-i18n="about-sub">Leeds Spinal Instrumentation Plan and Record · v3.50.03-beta</p>
       </div>
-      <p class="lead-p">A digital documentation tool for spinal surgery instrumentation. It records the pre-operative plan and the post-operative construct, replacing hand-drawn diagrams with a structured, exportable format. The web app is the main way to use it and runs in any modern browser on a connected hospital computer. Phone apps add quick implant scanning in theatre, and a single-file offline build covers the rare air-gapped machine that cannot load the web app even once.</p>
+      <p class="lead-p" data-i18n="about-lead">A digital documentation tool for spinal surgery instrumentation. It records the pre-operative plan and the post-operative construct, replacing hand-drawn diagrams with a structured, exportable format. The web app is the main way to use it and runs in any modern browser on a connected hospital computer. Phone apps add quick implant scanning in theatre, and a single-file offline build covers the rare air-gapped machine that cannot load the web app even once.</p>
       <p class="callout amber">Documentation tool, not a medical device. Not approved, cleared, or certified by MHRA, EU MDR notified bodies, or the FDA.</p>
       <p class="callout blue">Population-based reference data from published literature is provided for convenience. The operating surgeon must verify all values against the patient's anatomy and imaging.</p>
 
       <div class="highlights">
-        <div><b>The complete record</b><span>Document the whole case in one place: every implant, plus the decompression, osteotomies, plates, rods and cross-links. A complete construct record that complements navigation and robotics.</span></div>
-        <div><b>Whole-spine instrumentation</b><span>Pedicle screws, hooks, rods and fixation, occiput to pelvis.</span></div>
-        <div><b>Cages, discs &amp; osteotomies</b><span>Interbody cages (ACDF to ALIF), cervical and lumbar disc replacement, Schwab osteotomies and corpectomy.</span></div>
-        <div><b>Deformity planning</b><span>Correction forces and level-specific screw trajectories (pedicle, lateral mass, cortical, translaminar).</span></div>
-        <div><b>Decompression</b><span>Map the bony decompression itself by level and side using the Lee zones (central, lateral recess, foraminal, extraforaminal). The surgical detail that matters for research, registries and revision surgery.</span></div>
-        <div><b>Barcode &amp; UDI scanning</b><span>Reads GS1 and HIBC, auto-filling system, size, lot and expiry, or enter the sizes by hand.</span></div>
-        <div><b>Traceability &amp; inventory</b><span>Per-component lot and expiry, with an auto-generated implant inventory.</span></div>
-        <div><b>Variant anatomy</b><span>Transitional lumbosacral levels and non-standard thoracic and lumbar counts.</span></div>
-        <div><b>Export &amp; reload</b><span>Export a PDF for the patient record. It also carries a link and QR that reload the whole plan back into the app, so the same PDF doubles as a visual record in the EPR and a research source. JPG and JSON export too.</span></div>
-        <div><b>Share to order</b><span>QR codes and links share the plan with patient details removed (name, ID, dates, surgeon). Safe to send to theatre, admin or company reps to order the right implants.</span></div>
-        <div><b>Multilingual</b><span>Over twenty languages, including right-to-left scripts (Arabic, Hebrew) and CJK (Chinese, Japanese, Korean).</span></div>
-        <div><b>Built for theatre</b><span>Works offline, and private by default with no telemetry or accounts.</span></div>
+        <div><b data-i18n="hl-record-title">The complete record</b><span data-i18n="hl-record-desc">Document the whole case in one place: every implant, plus the decompression, osteotomies, plates, rods and cross-links. A complete construct record that complements navigation and robotics.</span></div>
+        <div><b data-i18n="hl-wholespine-title">Whole-spine instrumentation</b><span data-i18n="hl-wholespine-desc">Pedicle screws, hooks, rods and fixation, occiput to pelvis.</span></div>
+        <div><b data-i18n="hl-cages-title">Cages, discs &amp; osteotomies</b><span data-i18n="hl-cages-desc">Interbody cages (ACDF to ALIF), cervical and lumbar disc replacement, Schwab osteotomies and corpectomy.</span></div>
+        <div><b data-i18n="hl-deformity-title">Deformity planning</b><span data-i18n="hl-deformity-desc">Correction forces and level-specific screw trajectories (pedicle, lateral mass, cortical, translaminar).</span></div>
+        <div><b data-i18n="hl-decompression-title">Decompression</b><span data-i18n="hl-decompression-desc">Map the bony decompression itself by level and side using the Lee zones (central, lateral recess, foraminal, extraforaminal). The surgical detail that matters for research, registries and revision surgery.</span></div>
+        <div><b data-i18n="hl-barcode-title">Barcode &amp; UDI scanning</b><span data-i18n="hl-barcode-desc">Reads GS1 and HIBC, auto-filling system, size, lot and expiry, or enter the sizes by hand.</span></div>
+        <div><b data-i18n="hl-traceability-title">Traceability &amp; inventory</b><span data-i18n="hl-traceability-desc">Per-component lot and expiry, with an auto-generated implant inventory.</span></div>
+        <div><b data-i18n="hl-anatomy-title">Variant anatomy</b><span data-i18n="hl-anatomy-desc">Transitional lumbosacral levels and non-standard thoracic and lumbar counts.</span></div>
+        <div><b data-i18n="hl-export-title">Export &amp; reload</b><span data-i18n="hl-export-desc">Export a PDF for the patient record. It also carries a link and QR that reload the whole plan back into the app, so the same PDF doubles as a visual record in the EPR and a research source. JPG and JSON export too.</span></div>
+        <div><b data-i18n="hl-share-title">Share to order</b><span data-i18n="hl-share-desc">QR codes and links share the plan with patient details removed (name, ID, dates, surgeon). Safe to send to theatre, admin or company reps to order the right implants.</span></div>
+        <div><b data-i18n="hl-multilingual-title">Multilingual</b><span data-i18n="hl-multilingual-desc">Over twenty languages, including right-to-left scripts (Arabic, Hebrew) and CJK (Chinese, Japanese, Korean).</span></div>
+        <div><b data-i18n="hl-theatre-title">Built for theatre</b><span data-i18n="hl-theatre-desc">Works offline, and private by default with no telemetry or accounts.</span></div>
       </div>
-      <p style="margin-top:20px;"><a href="/spine/quick-reference.html">See the full feature guide &rarr;</a></p>
+      <p style="margin-top:20px;"><a href="/spine/quick-reference.html" data-i18n="about-guide-link">See the full feature guide &rarr;</a></p>
     </div>
   </section>
 
@@ -431,7 +435,7 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
 </main>
 
 <footer class="footer">
-  <p>Developed in Leeds, United Kingdom. Dual-licensed (Free Clinical Use / Commercial). Distribution via <a href="https://github.com/nigelgummerson/spine/releases">GitHub Releases</a>.</p>
+  <p data-i18n-html="footer-text">Developed in Leeds, United Kingdom. Dual-licensed (Free Clinical Use / Commercial). Distribution via <a href="https://github.com/nigelgummerson/spine/releases">GitHub Releases</a>.</p>
 </footer>
 
 <script>
@@ -454,6 +458,18 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
     ];
     var SUPPORTED = {}; LANGS.forEach(function (l) { SUPPORTED[l.code] = true; });
     var ALIASES = { no: 'nb', nn: 'nb' };
+    function applyI18n(code) {
+      var dict = (window.LANDING_I18N && window.LANDING_I18N[code]) || {};
+      document.querySelectorAll('[data-i18n]').forEach(function (el) {
+        var v = dict[el.getAttribute('data-i18n')];
+        if (v != null) el.textContent = v;
+      });
+      document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+        var v = dict[el.getAttribute('data-i18n-html')];
+        if (v != null) el.innerHTML = v;
+      });
+      document.documentElement.dir = (code === 'ar' || code === 'he') ? 'rtl' : 'ltr';
+    }
     function detect() {
       try { var s = localStorage.getItem('spine_planner_lang'); if (s && SUPPORTED[s]) return s; } catch (e) {}
       var nav = (navigator.language || 'en').toLowerCase();
@@ -470,11 +486,12 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
     var cur = detect();
     sel.value = cur;
     document.documentElement.lang = cur;
+    applyI18n(cur);
     sel.addEventListener('change', function () {
       var code = sel.value;
       try { localStorage.setItem('spine_planner_lang', code); } catch (e) {}
       document.documentElement.lang = code;
-      // Phase 2: swap landing strings from the dictionary + set <html dir> for ar/he.
+      applyI18n(code);
     });
   })();
 </script>
