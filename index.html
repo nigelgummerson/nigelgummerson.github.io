@@ -72,6 +72,16 @@
   .detect{ font-size:.84rem; color:var(--muted); margin-bottom:18px; }
   .detect b{ color:var(--ink); }
 
+  .web-row{ display:flex; align-items:center; justify-content:space-between; gap:28px;
+    border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:12px;
+    padding:22px 26px; margin-bottom:16px; background:linear-gradient(180deg,#ffffff,#f6faf9); }
+  .web-row .left{ display:flex; align-items:flex-start; gap:16px; }
+  .web-row .glyph{ width:30px; height:30px; color:var(--accent); flex-shrink:0; margin-top:2px; }
+  .web-row .glyph svg{ width:100%; height:100%; display:block; }
+  .web-row h3{ font-size:1.14rem; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .web-row p{ color:var(--muted); font-size:.88rem; margin-top:6px; max-width:64ch; }
+  .web-row .btn{ flex-shrink:0; }
+  @media (max-width:640px){ .web-row{ flex-direction:column; align-items:flex-start; } }
   .dl-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; }
   .dl{ position:relative; border:1px solid var(--line); border-radius:12px; padding:22px 20px; background:#fff; display:flex; flex-direction:column; }
   .dl.lead-card{ border-left:3px solid var(--accent); }
@@ -189,16 +199,18 @@
         <p class="sec-sub">It runs in any browser — that's the main way to use it. Native and offline builds are available too.</p>
       </div>
       <p class="detect" id="detect">Use it in your browser, or pick a build below.</p>
-      <div class="dl-grid">
-
-        <div class="dl lead-card" data-platform="web">
-          <span class="tag full">Full app</span>
-          <span class="tag here">Your device</span>
+      <div class="web-row">
+        <div class="left">
           <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.7 2.5 4.1 5.8 4.1 9.2S14.7 18.7 12 21.2M12 2.8c-2.7 2.5-4.1 5.8-4.1 9.2S9.3 18.7 12 21.2"/></svg></span>
-          <h3>Web browser</h3>
-          <p class="plat-sub">Any modern browser, on any device. Nothing to install, always the latest version, and it keeps working offline once loaded. Add it to your home screen or desktop to pin it like an app.</p>
-          <a class="act solid" href="/spine/">Open Skeletal Plan</a>
+          <div>
+            <h3>Web browser <span class="pill">The full app</span></h3>
+            <p>Any modern browser, on any device — nothing to install, always the latest version, and it keeps working offline once loaded. Add it to your home screen or desktop to pin it like an app. This is the main way to use Skeletal Plan; the options below are alternatives.</p>
+          </div>
         </div>
+        <a class="btn btn-primary" href="/spine/">Open Skeletal Plan</a>
+      </div>
+
+      <div class="dl-grid">
 
         <div class="dl" data-platform="android">
           <span class="tag here">Your device</span>
@@ -230,7 +242,7 @@
         <div class="dl muted" data-platform="ios">
           <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.6 5.4h2.8"/></svg></span>
           <h3>iPhone &amp; iPad</h3>
-          <p class="plat-sub">Use it in Safari today — Add to Home Screen to pin it as an app. A native iOS build is in internal testing with a small group.</p>
+          <p class="plat-sub">A native iOS build is fully functional and in internal testing with a small group. You can also use it in Safari today — Add to Home Screen to pin it as an app.</p>
           <p class="status">iOS app — in testing</p>
         </div>
 
