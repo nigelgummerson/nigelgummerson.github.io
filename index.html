@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Skeletal Surgery Planning Tools | Spinal Instrumentation Plan &amp; Record</title>
-<meta name="description" content="Free digital surgical planning tools for spinal surgeons. Leeds Spinal Instrumentation Plan and Record — visual pre-operative planning with PDF export. Runs in any browser, offline on hospital computers, with phone apps for fast implant barcode scanning in theatre. 22 languages including Arabic and Hebrew (RTL), Chinese Simplified, Japanese and Korean.">
+<meta name="description" content="Free digital surgical planning tools for spinal surgeons. Leeds Spinal Instrumentation Plan and Record — visual pre-operative planning with PDF export. Runs in any browser, offline on hospital computers. 22 languages including Arabic and Hebrew (RTL), Chinese Simplified, Japanese and Korean.">
 <meta name="keywords" content="spinal instrumentation, surgical planning, spine surgery, pedicle screw planning, pre-operative plan, operative record, spinal construct, Leeds, NHS, orthopaedic surgery, deformity correction">
 <meta name="author" content="Nigel Gummerson">
 <link rel="icon" href="/img/app-icon.svg">
 <link rel="canonical" href="https://plan.skeletalsurgery.com/">
 <meta property="og:title" content="Skeletal Surgery Planning Tools">
-<meta property="og:description" content="Free digital surgical planning tools for spinal surgeons. Visual pre-operative instrumentation planning with PDF export — runs in any browser, with phone apps for fast implant scanning in theatre.">
+<meta property="og:description" content="Free digital surgical planning tools for spinal surgeons. Visual pre-operative instrumentation planning with PDF export. Runs in any modern browser.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://plan.skeletalsurgery.com/">
 <meta property="og:image" content="https://plan.skeletalsurgery.com/img/screenshot-plan.png">
@@ -26,7 +26,7 @@
   html{ scroll-behavior:smooth; }
   body{ font-family:var(--sans); color:var(--body); line-height:1.62; background:var(--bg); -webkit-font-smoothing:antialiased; }
   a{ color:var(--accent); }
-  h1,h2,h3{ color:var(--ink); font-family:var(--sans); font-weight:700; letter-spacing:-.022em; line-height:1.15; }
+  h1,h2,h3{ color:var(--ink); font-family:var(--sans); font-weight:700; letter-spacing:-.022em; line-height:1.16; }
 
   .nav{ position:sticky; top:0; z-index:20; background:rgba(13,27,42,.97); backdrop-filter:saturate(160%) blur(8px);
         display:flex; align-items:center; justify-content:space-between; padding:12px 22px; }
@@ -37,20 +37,18 @@
   .nav .links a:hover{ color:#fff; }
   .nav .links a.cta{ color:#fff; background:var(--accent); padding:7px 15px; border-radius:7px; font-weight:600; }
   .nav .links a.cta:hover{ background:var(--accent-d); }
-  @media (max-width:560px){ .nav .links a.about{ display:none; } }
+  @media (max-width:600px){ .nav .links a.hide-sm{ display:none; } }
 
-  /* HERO */
   .hero{ background:linear-gradient(160deg,#0d1b2a 0%,#102338 60%,#0c2230 100%); color:#e8edf3; overflow:hidden; }
-  .hero-in{ max-width:1120px; margin:0 auto; padding:64px 24px 58px; display:grid; grid-template-columns:1.02fr .98fr; gap:48px; align-items:center; }
+  .hero-in{ max-width:1120px; margin:0 auto; padding:62px 24px 56px; display:grid; grid-template-columns:1.02fr .98fr; gap:48px; align-items:center; }
   .eyebrow{ text-transform:uppercase; letter-spacing:.14em; font-size:.72rem; font-weight:700; color:#5fb6ac; margin-bottom:16px; }
-  .hero h1{ color:#fff; font-size:2.7rem; line-height:1.08; }
+  .hero h1{ color:#fff; font-size:2.55rem; line-height:1.08; }
   .hero h1 .dim{ color:#7f93a8; }
-  .hero .lead{ margin-top:18px; color:#b8c4d2; font-size:1.06rem; max-width:30em; }
-  .hero-cta{ margin-top:30px; display:flex; gap:13px; flex-wrap:wrap; align-items:center; }
+  .hero .lead{ margin-top:18px; color:#b8c4d2; font-size:1.04rem; max-width:31em; }
+  .hero-cta{ margin-top:28px; display:flex; gap:13px; flex-wrap:wrap; align-items:center; }
   .btn{ display:inline-flex; align-items:center; gap:9px; padding:13px 24px; border-radius:9px; text-decoration:none; font-size:.95rem; font-weight:600; border:1px solid transparent; font-family:var(--sans); cursor:pointer; }
   .btn-primary{ background:var(--accent); color:#fff; }
   .btn-primary:hover{ background:var(--accent-d); }
-  .btn-lg{ padding:16px 30px; font-size:1.05rem; }
   .btn-ghost{ background:transparent; color:#cdd8e4; border-color:#33455a; }
   .btn-ghost:hover{ border-color:#5b7186; color:#fff; }
   .trustline{ margin-top:20px; color:#7e8ea0; font-size:.82rem; }
@@ -58,57 +56,58 @@
 
   .shot{ position:relative; }
   .shot .desk{ width:100%; border-radius:12px; border:1px solid #28384b; box-shadow:0 26px 60px -24px rgba(0,0,0,.7); display:block; }
-  .shot .phone{ position:absolute; right:-6px; bottom:-26px; width:27%; min-width:120px; border-radius:16px; border:3px solid #1c2c3e; box-shadow:0 20px 40px -14px rgba(0,0,0,.65); }
+  .shot .phone{ position:absolute; right:-6px; bottom:-24px; width:26%; min-width:116px; border-radius:16px; border:3px solid #1c2c3e; box-shadow:0 20px 40px -14px rgba(0,0,0,.65); }
   @media (max-width:840px){
-    .hero-in{ grid-template-columns:1fr; gap:38px; padding:46px 22px 52px; }
-    .hero h1{ font-size:2.15rem; }
+    .hero-in{ grid-template-columns:1fr; gap:36px; padding:46px 22px 50px; }
+    .hero h1{ font-size:2.1rem; }
     .shot{ max-width:520px; }
-    .shot .phone{ bottom:-18px; }
+    .shot .phone{ bottom:-16px; }
   }
 
   .wrap{ max-width:1000px; margin:0 auto; padding:0 24px; }
-  section.block{ padding:56px 0; border-bottom:1px solid var(--line); }
-  .sec-head{ max-width:660px; margin-bottom:26px; }
-  h2.sec{ font-size:1.55rem; }
+  section.block{ padding:54px 0; border-bottom:1px solid var(--line); }
+  .sec-head{ max-width:660px; margin-bottom:24px; }
+  h2.sec{ font-size:1.5rem; }
   .sec-sub{ color:var(--muted); font-size:.95rem; margin-top:8px; }
+  .detect{ font-size:.84rem; color:var(--muted); margin-bottom:18px; }
+  .detect b{ color:var(--ink); }
 
-  /* PRIMARY: web app */
-  .primary-web{ display:flex; align-items:center; justify-content:space-between; gap:30px;
-    background:linear-gradient(180deg,#ffffff,#f4f8f8); border:1px solid var(--line);
-    border-left:4px solid var(--accent); border-radius:14px; padding:28px 30px; }
-  .primary-web .glyph{ width:32px; height:32px; color:var(--accent); margin-bottom:12px; }
-  .primary-web .glyph svg{ width:100%; height:100%; }
-  .primary-web h3{ font-size:1.25rem; display:flex; align-items:center; gap:10px; }
-  .primary-web p{ color:var(--body); font-size:.96rem; max-width:56ch; margin-top:8px; }
-  .primary-web .col-btn{ flex-shrink:0; }
-  .primary-web .sub{ display:block; margin-top:8px; font-size:.8rem; color:var(--muted); }
-  .pill{ display:inline-block; background:var(--accent-soft); color:var(--accent-d); font-size:.68rem; font-weight:700; padding:3px 9px; border-radius:999px; vertical-align:middle; letter-spacing:.03em; text-transform:uppercase; }
-  @media (max-width:680px){ .primary-web{ flex-direction:column; align-items:flex-start; } }
-
-  /* Theatre: phone apps */
-  .theatre{ margin-top:42px; }
-  .sub-h{ font-size:1.12rem; }
-  .sub-lead{ color:var(--muted); font-size:.93rem; max-width:62ch; margin:6px 0 20px; }
-  .dl-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; max-width:660px; }
+  .dl-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; }
   .dl{ position:relative; border:1px solid var(--line); border-radius:12px; padding:22px 20px; background:#fff; display:flex; flex-direction:column; }
+  .dl.lead-card{ border-left:3px solid var(--accent); }
+  .dl .tag{ position:absolute; top:14px; right:14px; font-size:.64rem; font-weight:700; padding:3px 9px; border-radius:999px; text-transform:uppercase; letter-spacing:.04em; }
+  .dl .tag.full{ color:var(--accent-d); background:var(--accent-soft); }
+  .dl .tag.here{ display:none; color:#fff; background:var(--accent); }
+  .dl.here-on{ border-color:var(--accent); }
+  .dl.here-on .tag.full{ display:none; }
+  .dl.here-on .tag.here{ display:inline-block; }
   .dl .glyph{ width:28px; height:28px; color:var(--navy); }
   .dl .glyph svg{ width:100%; height:100%; display:block; }
   .dl h3{ font-size:1.02rem; margin:13px 0 4px; }
   .dl .plat-sub{ color:var(--muted); font-size:.84rem; line-height:1.5; margin-bottom:16px; flex:1; }
-  .dl .here{ display:none; position:absolute; top:14px; right:14px; font-size:.66rem; font-weight:700; color:var(--accent); background:var(--accent-soft); padding:3px 9px; border-radius:999px; text-transform:uppercase; letter-spacing:.03em; }
-  .dl.here-on{ border-color:var(--accent); }
-  .dl.here-on .here{ display:inline-block; }
   .dl .act{ display:inline-flex; align-items:center; justify-content:center; gap:7px; padding:10px 14px; border-radius:8px; text-decoration:none; font-size:.86rem; font-weight:600; }
-  .dl .act.solid{ background:var(--navy); color:#fff; } .dl .act.solid:hover{ background:#1d3147; }
-  .dl .act.line{ background:#fff; color:var(--accent); border:1px solid var(--accent); } .dl .act.line:hover{ background:var(--accent); color:#fff; }
-  .dl .fine{ font-size:.74rem; color:var(--muted); margin-top:9px; }
+  .dl .act.solid{ background:var(--accent); color:#fff; } .dl .act.solid:hover{ background:var(--accent-d); }
+  .dl .act.line{ background:#fff; color:var(--accent); border:1px solid #cfe0dd; } .dl .act.line:hover{ background:var(--accent); color:#fff; border-color:var(--accent); }
+  .dl .status{ font-size:.82rem; color:var(--muted); font-weight:600; padding:9px 0 1px; border-top:1px dashed var(--line); }
+  .dl .fine{ font-size:.73rem; color:var(--muted); margin-top:9px; }
   .dl .fine.warn{ color:#9a6a12; }
+  .dl.muted{ background:var(--soft); }
 
-  .also{ margin-top:34px; padding-top:20px; border-top:1px dashed var(--line); font-size:.85rem; color:var(--muted); max-width:70ch; }
-  .also a{ color:var(--muted); text-decoration:underline; }
-  .also b{ color:var(--ink); }
+  /* Manufacturer / data submission */
+  .mfr{ display:grid; grid-template-columns:1.2fr .8fr; gap:34px; align-items:center; }
+  .mfr .req{ list-style:none; margin:16px 0 4px; }
+  .mfr .req li{ position:relative; padding-left:30px; margin-bottom:14px; font-size:.93rem; color:var(--body); }
+  .mfr .req li b{ color:var(--ink); }
+  .mfr .req li::before{ content:"✓"; position:absolute; left:0; top:-1px; width:20px; height:20px; line-height:20px; text-align:center;
+    font-size:.72rem; font-weight:800; color:#fff; background:var(--accent); border-radius:50%; }
+  .mfr .both{ display:inline-block; margin-top:6px; font-size:.82rem; color:var(--accent-d); font-weight:600; }
+  .mfr-card{ background:var(--soft); border:1px solid var(--line); border-radius:14px; padding:26px; }
+  .mfr-card h3{ font-size:1.05rem; }
+  .mfr-card p{ color:var(--muted); font-size:.86rem; margin:8px 0 18px; }
+  @media (max-width:740px){ .mfr{ grid-template-columns:1fr; gap:22px; } }
 
   .lead-p{ color:var(--body); font-size:1rem; margin:0 0 14px; max-width:62ch; }
+  .pill{ display:inline-block; background:var(--accent-soft); color:var(--accent-d); font-size:.68rem; font-weight:700; padding:3px 9px; border-radius:999px; vertical-align:middle; letter-spacing:.03em; text-transform:uppercase; }
   .callout{ border-radius:8px; padding:13px 16px; font-size:.86rem; line-height:1.5; margin-top:14px; }
   .callout.amber{ background:#fdf6e3; border:1px solid #f3e2b3; color:#7c5a13; }
   .callout.blue{ background:#eef6fb; border:1px solid #cfe4f1; color:#2a5067; }
@@ -134,10 +133,10 @@
   "@type": "WebApplication",
   "name": "Spinal Instrumentation Plan & Record",
   "alternateName": "Leeds Spinal Instrumentation Plan and Record",
-  "description": "Free digital surgical planning tool for spinal surgeons. Visual pre-operative instrumentation planning and post-operative construct recording with PDF export. Runs in any modern browser, offline on hospital computers, with companion phone apps for fast implant barcode scanning in theatre.",
+  "description": "Free digital surgical planning tool for spinal surgeons. Visual pre-operative instrumentation planning and post-operative construct recording with PDF export. Runs in any modern browser, offline on hospital computers.",
   "url": "https://plan.skeletalsurgery.com/spine/",
   "applicationCategory": "HealthApplication",
-  "operatingSystem": "Web, iOS, iPadOS, Android, macOS, Windows",
+  "operatingSystem": "Web, Android, macOS, Windows",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
   "author": {
     "@type": "Person",
@@ -156,8 +155,8 @@
 <nav class="nav">
   <span class="brand"><img src="/img/app-icon.svg" alt="">Skeletal Plan</span>
   <span class="links">
-    <a class="about" href="#about">About</a>
-    <a href="#theatre">In theatre</a>
+    <a class="hide-sm" href="#about">About</a>
+    <a href="#manufacturers">Manufacturers</a>
     <a class="cta" href="/spine/">Open app</a>
   </span>
 </nav>
@@ -169,8 +168,8 @@
       <h1>Plan it. Scan it. <span class="dim">Keep it.</span></h1>
       <p class="lead">A pre-operative planning and operative-record tool for spinal surgeons — design the construct, scan the implants you used, and keep a structured, exportable record. It runs in your browser on any device.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary btn-lg" href="/spine/">Open Skeletal Plan</a>
-        <a class="btn btn-ghost" href="#theatre">In theatre? Get the scanner app</a>
+        <a class="btn btn-primary" href="/spine/">Open Skeletal Plan</a>
+        <a class="btn btn-ghost" href="#download">Downloads</a>
       </div>
       <p class="trustline"><b>Free for clinical use</b> · works offline · 22 languages · no account, no telemetry</p>
     </div>
@@ -186,51 +185,88 @@
   <section class="block" id="download">
     <div class="wrap">
       <div class="sec-head">
-        <h2 class="sec">Use it in your browser</h2>
-        <p class="sec-sub">Skeletal Plan is a web app — that's the way it's meant to be used. No install, always the latest version.</p>
+        <h2 class="sec">Get Skeletal Plan</h2>
+        <p class="sec-sub">It runs in any browser — that's the main way to use it. Native and offline builds are available too.</p>
       </div>
+      <p class="detect" id="detect">Use it in your browser, or pick a build below.</p>
+      <div class="dl-grid">
 
-      <div class="primary-web">
-        <div>
+        <div class="dl lead-card" data-platform="web">
+          <span class="tag full">Full app</span>
+          <span class="tag here">Your device</span>
           <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.7 2.5 4.1 5.8 4.1 9.2S14.7 18.7 12 21.2M12 2.8c-2.7 2.5-4.1 5.8-4.1 9.2S9.3 18.7 12 21.2"/></svg></span>
-          <h3>Skeletal Plan in the browser <span class="pill">The full app</span></h3>
-          <p>Works on any computer, tablet or phone — desktop, laptop or a connected hospital PC. Nothing to install, always current, and it keeps working offline once loaded. On iPad or desktop you can also "Add to Home Screen / Install" to pin it as an app.</p>
-          <span class="sub">Best on desktop, laptop or tablet. Prefer a single offline file? See the foot of this section.</span>
+          <h3>Web browser</h3>
+          <p class="plat-sub">Any modern browser, on any device. Nothing to install, always the latest version, and it keeps working offline once loaded. Add it to your home screen or desktop to pin it like an app.</p>
+          <a class="act solid" href="/spine/">Open Skeletal Plan</a>
         </div>
-        <a class="btn btn-primary btn-lg col-btn" href="/spine/">Open Skeletal Plan</a>
+
+        <div class="dl" data-platform="android">
+          <span class="tag here">Your device</span>
+          <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.48l1.84-3.18a.4.4 0 0 0-.7-.4l-1.86 3.23a11.4 11.4 0 0 0-9.76 0L5.26 5.9a.4.4 0 1 0-.7.4L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg></span>
+          <h3>Android</h3>
+          <p class="plat-sub">Native app (.apk). The full implant (GTIN) catalogue is bundled in the app, and barcode scanning is faster than the browser. Download on the phone and tap to install.</p>
+          <a class="act line" href="https://github.com/nigelgummerson/spine/releases/download/native-preview/Skeletal-Plan-3.50.3-android.apk">Download for Android</a>
+          <p class="fine warn">Preview — allow &ldquo;install unknown apps&rdquo; when asked.</p>
+        </div>
+
+        <div class="dl" data-platform="mac">
+          <span class="tag here">Your device</span>
+          <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.36 1.43c0 1.13-.46 2.2-1.2 3-.79.85-2.07 1.5-3.17 1.4-.13-1.08.42-2.25 1.15-3.03.8-.85 2.2-1.48 3.22-1.37zM20.78 17.2c-.55 1.26-.81 1.82-1.52 2.94-.98 1.55-2.37 3.48-4.1 3.49-1.53.02-1.92-1-4-1-2.08.02-2.51 1.02-4.04 1-1.72-.02-3.03-1.76-4.02-3.31C.46 17.86-.2 13.1 1.42 10.36c1.15-1.95 2.97-3.09 4.68-3.09 1.74 0 2.83 1.01 4.27 1.01 1.39 0 2.24-1.01 4.26-1.01 1.52 0 3.13.83 4.28 2.26-3.76 2.07-3.15 7.44.76 8.66z"/></svg></span>
+          <h3>macOS</h3>
+          <p class="plat-sub">Desktop app (.dmg), Apple Silicon. The browser version is the same thing without an install.</p>
+          <a class="act line" href="https://github.com/nigelgummerson/spine/releases/download/native-preview/Skeletal-Plan-3.50.3-macos-arm64.dmg">Download for Mac</a>
+          <p class="fine warn">Unsigned preview — first launch: right-click &rarr; Open.</p>
+        </div>
+
+        <div class="dl" data-platform="windows">
+          <span class="tag here">Your device</span>
+          <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5l8-1.1V11H3V5.5zM11.8 4.3L21 3v8H11.8V4.3zM3 12.5h8v6.6l-8-1.1v-5.5zM11.8 12.5H21V21l-9.2-1.3v-7.2z"/></svg></span>
+          <h3>Windows</h3>
+          <p class="plat-sub">Installer (.exe) for Windows 10 / 11. The browser version is the same thing without an install.</p>
+          <a class="act line" href="https://github.com/nigelgummerson/spine/releases/download/native-preview/Skeletal-Plan-3.50.3-windows-x64-setup.exe">Download for Windows</a>
+          <p class="fine warn">Unsigned preview — SmartScreen &rarr; &ldquo;More info &rarr; Run anyway&rdquo;.</p>
+        </div>
+
+        <div class="dl muted" data-platform="ios">
+          <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.6 5.4h2.8"/></svg></span>
+          <h3>iPhone &amp; iPad</h3>
+          <p class="plat-sub">Use it in Safari today — Add to Home Screen to pin it as an app. A native iOS build is in internal testing with a small group.</p>
+          <p class="status">iOS app — in testing</p>
+        </div>
+
+        <div class="dl" data-platform="offline">
+          <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v11m0 0l4-4m-4 4l-4-4M4.5 16.5v2A1.5 1.5 0 0 0 6 20h12a1.5 1.5 0 0 0 1.5-1.5v-2"/></svg></span>
+          <h3>Offline single file</h3>
+          <p class="plat-sub">One self-contained HTML file for locked-down hospital PCs. Opens in any browser, fully offline.</p>
+          <a class="act line" href="https://github.com/nigelgummerson/spine/releases/latest">Download offline build</a>
+        </div>
+
       </div>
+      <p class="sec-sub" style="margin-top:18px;">All builds and version notes: <a href="https://github.com/nigelgummerson/spine/releases">GitHub Releases</a>.</p>
+    </div>
+  </section>
 
-      <div class="theatre" id="theatre">
-        <h3 class="sub-h">In theatre — the phone scanner</h3>
-        <p class="sub-lead">The iPhone and Android apps carry the full implant <b>GTIN/UDI catalogue offline</b> and scan implant barcodes fast at the table — the quickest way to record exactly what you used during surgery. Install one of these if you'll scan implants in theatre. (Everything else works in the browser.)</p>
-        <div class="dl-grid">
-
-          <div class="dl" data-platform="ios">
-            <span class="here">Your device</span>
-            <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.36 1.43c0 1.13-.46 2.2-1.2 3-.79.85-2.07 1.5-3.17 1.4-.13-1.08.42-2.25 1.15-3.03.8-.85 2.2-1.48 3.22-1.37zM20.78 17.2c-.55 1.26-.81 1.82-1.52 2.94-.98 1.55-2.37 3.48-4.1 3.49-1.53.02-1.92-1-4-1-2.08.02-2.51 1.02-4.04 1-1.72-.02-3.03-1.76-4.02-3.31C.46 17.86-.2 13.1 1.42 10.36c1.15-1.95 2.97-3.09 4.68-3.09 1.74 0 2.83 1.01 4.27 1.01 1.39 0 2.24-1.01 4.26-1.01 1.52 0 3.13.83 4.28 2.26-3.76 2.07-3.15 7.44.76 8.66z"/></svg></span>
-            <h3>iPhone &amp; iPad</h3>
-            <p class="plat-sub">Native scanner with the offline implant catalogue. Available via TestFlight — request an invite.</p>
-            <a class="act line" href="mailto:skeletalsurgery@icloud.com?subject=Skeletal%20Plan%20iOS%20TestFlight%20invite">Request TestFlight invite</a>
+  <section class="block" id="manufacturers">
+    <div class="wrap">
+      <div class="mfr">
+        <div>
+          <div class="sec-head" style="margin-bottom:6px;">
+            <h2 class="sec">For implant manufacturers</h2>
+            <p class="sec-sub">Get your system scanning and sizing correctly in Skeletal Plan.</p>
           </div>
-
-          <div class="dl" data-platform="android">
-            <span class="here">Your device</span>
-            <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.48l1.84-3.18a.4.4 0 0 0-.7-.4l-1.86 3.23a11.4 11.4 0 0 0-9.76 0L5.26 5.9a.4.4 0 1 0-.7.4L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg></span>
-            <h3>Android</h3>
-            <p class="plat-sub">Native scanner with the offline implant catalogue (.apk). Download on the phone and tap to install.</p>
-            <a class="act solid" href="https://github.com/nigelgummerson/spine/releases/download/native-preview/Skeletal-Plan-3.50.3-android.apk">Download for Android</a>
-            <p class="fine warn">Preview — allow &ldquo;install unknown apps&rdquo; when asked.</p>
-          </div>
-
+          <p class="lead-p">The app matches scanned implants against an offline catalogue. To add or correct your system, send us <b>both</b> of the following — each does a different job:</p>
+          <ul class="req">
+            <li><b>Surgical Technique Guides (STG)</b> — so screws, rods and cages are <b>sized</b> correctly in the planner (diameters, lengths, ordering matrix).</li>
+            <li><b>GTIN / UDI data</b> — so the physical <b>barcodes scan</b> and resolve to the right implant (GS1 and HIBC).</li>
+          </ul>
+          <span class="both">Both are required — sizing needs the STG, scanning needs the GTIN.</span>
+        </div>
+        <div class="mfr-card">
+          <h3>Submit your data</h3>
+          <p>Email your STGs and GTIN/UDI export and we'll add the system to the catalogue.</p>
+          <a class="btn btn-primary" href="mailto:skeletalsurgery@icloud.com?subject=Implant%20data%20submission%20(STG%20%2B%20GTIN)&amp;body=System%2Fbrand%3A%0AManufacturer%3A%0AAttached%3A%20STG(s)%20%2B%20GTIN%2FUDI%20export%20(both%20required)%0A">Email STG + GTIN data</a>
         </div>
       </div>
-
-      <p class="also">
-        <b>Also available (previews, not needed for normal use):</b> the app is packaged as an unsigned
-        <a href="https://github.com/nigelgummerson/spine/releases/download/native-preview/Skeletal-Plan-3.50.3-macos-arm64.dmg">Mac desktop app</a> and
-        <a href="https://github.com/nigelgummerson/spine/releases/download/native-preview/Skeletal-Plan-3.50.3-windows-x64-setup.exe">Windows app</a>,
-        plus a one-file <a href="https://github.com/nigelgummerson/spine/releases/latest">offline build</a> for locked-down PCs. The desktop apps are demos — the browser version is the same thing without an install. All builds: <a href="https://github.com/nigelgummerson/spine/releases">GitHub Releases</a>.
-      </p>
     </div>
   </section>
 
@@ -240,7 +276,7 @@
         <h2 class="sec">Spinal Instrumentation Plan &amp; Record <span class="pill">Free</span></h2>
         <p class="sec-sub">Leeds Spinal Instrumentation Plan and Record — v3.50.03-beta</p>
       </div>
-      <p class="lead-p">A digital documentation tool for spinal surgery instrumentation. It records the pre-operative plan and post-operative construct, replacing hand-drawn diagrams with a structured, exportable format that works in any modern browser on connected hospital computers — with phone and offline builds for when there's no network.</p>
+      <p class="lead-p">A digital documentation tool for spinal surgery instrumentation. It records the pre-operative plan and post-operative construct, replacing hand-drawn diagrams with a structured, exportable format that works in any modern browser on connected hospital computers — with native and offline builds for when there's no network.</p>
       <p class="callout amber">Documentation tool — not a medical device. Not approved, cleared, or certified by MHRA, EU MDR notified bodies, or the FDA.</p>
       <p class="callout blue">Population-based reference data from published literature is provided for convenience. The operating surgeon must verify all values against the patient's anatomy and imaging.</p>
 
@@ -311,16 +347,19 @@
 </footer>
 
 <script>
-  // Only nudge phone visitors toward the in-theatre scanner app; everyone else
-  // is steered to the web app (the primary product). Best-effort detection.
+  // Subtle nicety: tag the card matching the visitor's device. The web app is
+  // the primary path for everyone; this only adds a "Your device" marker.
   (function () {
-    var ua = navigator.userAgent || '', touch = navigator.maxTouchPoints || 0, plat = '';
+    var ua = navigator.userAgent || '', touch = navigator.maxTouchPoints || 0, plat = 'web';
     if (/Android/i.test(ua)) plat = 'android';
     else if (/iPhone|iPod/i.test(ua) || /iPad/i.test(ua) || (/Macintosh/i.test(ua) && touch > 1)) plat = 'ios';
-    if (plat) {
-      var card = document.querySelector('.dl[data-platform="' + plat + '"]');
-      if (card) card.classList.add('here-on');
-    }
+    else if (/Macintosh|Mac OS X/i.test(ua)) plat = 'mac';
+    else if (/Windows/i.test(ua)) plat = 'windows';
+    var card = document.querySelector('.dl[data-platform="' + plat + '"]');
+    if (card && plat !== 'ios') card.classList.add('here-on');
+    var det = document.getElementById('detect');
+    var names = { web:'your browser', android:'Android', mac:'macOS', windows:'Windows', ios:'iPhone / iPad' };
+    if (det) det.innerHTML = "Detected <b>" + (names[plat] || 'your device') + "</b> — but the browser app works everywhere.";
   })();
 </script>
 </body>
