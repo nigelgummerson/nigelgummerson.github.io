@@ -169,6 +169,8 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   .step{ display:grid; grid-template-columns:auto 1fr; column-gap:11px; align-items:center; }
   .step .n{ display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:8px; background:var(--accent-soft); color:var(--accent-d); font-weight:800; font-size:.9rem; }
   .step h3{ font-size:1.08rem; margin:0; }
+  .step h3 a{ color:inherit; text-decoration:none; }
+  .step h3 a:hover{ color:var(--accent); }
   .step p{ color:var(--body); font-size:.9rem; grid-column:1 / -1; margin-top:12px; }
   .step ul{ list-style:none; margin:12px 0 0; grid-column:1 / -1; }
   .step ul li{ position:relative; padding-inline-start:18px; font-size:.88rem; color:var(--body); margin-bottom:6px; }
@@ -281,17 +283,17 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
       <div class="how-grid">
         <div class="step">
           <span class="n">1</span>
-          <h3 data-i18n="step1-title">Plan</h3>
+          <h3><a href="/spine/quick-reference.html#plan" data-i18n="step1-title">Plan</a></h3>
           <p data-i18n="step1-p">Design the construct level by level: screws, rods, cages, osteotomies and correction forces, across normal or variant anatomy.</p>
         </div>
         <div class="step">
           <span class="n">2</span>
-          <h3 data-i18n="step2-title">Scan, or just record</h3>
+          <h3><a href="/spine/quick-reference.html#scan" data-i18n="step2-title">Scan, or just record</a></h3>
           <p data-i18n="step2-p">Record the implants you used. Scan the barcodes to auto-fill the system, size, lot and expiry, or enter the sizes by hand. That is just as quick when screws come on a non-sterile tray with no packaging to scan.</p>
         </div>
         <div class="step">
           <span class="n">3</span>
-          <h3 data-i18n="step3-title">Keep</h3>
+          <h3><a href="/spine/quick-reference.html#keep" data-i18n="step3-title">Keep</a></h3>
           <p data-i18n="step3-p">Keep a clean, exportable record that stays useful long after the case:</p>
           <ul>
             <li data-i18n-html="step3-li1">A <b>PDF</b> for the patient record and notes</li>
