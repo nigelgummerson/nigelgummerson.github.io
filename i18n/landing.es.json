@@ -18,7 +18,7 @@
   "how-h2": "Planifíquela. Escanéela. Consérvela.",
   "how-sub": "Del plan preoperatorio a un registro que puede utilizar.",
   "step1-title": "Planificar",
-  "step1-p": "Diseñe el constructo nivel a nivel: tornillos, barras, cajas, osteotomías y fuerzas de corrección, en anatomía normal o con variantes.",
+  "step1-p": "Diseñe el constructo nivel a nivel: tornillos, barras, cajas, osteotomías y fuerzas de corrección, en anatomía normal o con variantes. Registra la osteotomía y la corrección prevista; los ángulos de corrección provienen de un software específico de planificación de deformidades.",
   "step2-title": "Escanee, o simplemente registre",
   "step2-p": "Registre los implantes que utilizó. Escanee los códigos de barras para autocompletar el sistema, el tamaño, el lote y la caducidad, o introduzca los tamaños a mano. Es igual de rápido cuando los tornillos vienen en una bandeja no estéril sin envase que escanear.",
   "step3-title": "Conservar",
@@ -61,7 +61,7 @@
   "mfr-card-button": "Enviar datos STG + GTIN",
 
   "about-h2": "Plan y registro de instrumentación vertebral <span class=\"pill\">Gratis</span>",
-  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.50.03-beta",
+  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.51.00-beta",
   "about-lead": "Una herramienta de documentación digital para la instrumentación de cirugía vertebral. Registra el plan preoperatorio y el constructo postoperatorio, sustituyendo los diagramas dibujados a mano por un formato estructurado y exportable. La app web es la forma principal de usarla y funciona en cualquier navegador moderno en un ordenador hospitalario conectado. Las aplicaciones para teléfono añaden un escaneo rápido de implantes en quirófano, y una versión sin conexión de archivo único cubre la rara máquina aislada de la red que no puede cargar la app web ni una sola vez.",
 
   "hl-record-title": "El registro completo",
@@ -71,7 +71,9 @@
   "hl-cages-title": "Cajas, discos y osteotomías",
   "hl-cages-desc": "Cajas intersomáticas (de ACDF a ALIF), reemplazo de disco cervical y lumbar, osteotomías de Schwab y corpectomía.",
   "hl-deformity-title": "Planificación de deformidades",
-  "hl-deformity-desc": "Fuerzas de corrección y trayectorias de tornillo específicas por nivel (pedicular, masa lateral, cortical, translaminar).",
+  "hl-deformity-desc": "Colocación de anclajes (tornillos, ganchos, bandas), fuerzas de corrección previstas.",
+  "hl-screws-title": "Colocación de tornillos",
+  "hl-screws-desc": "Elija la trayectoria adecuada para cada nivel: pedicular, masa lateral, cortical (CBT), pars, translaminar y transarticular. La vista proyectada del vástago usa ángulos de convergencia publicados, a modo ilustrativo.",
   "hl-decompression-title": "Descompresión",
   "hl-decompression-desc": "Mapee la propia descompresión ósea por nivel y lado usando las zonas de Lee (central, receso lateral, foraminal, extraforaminal). El detalle quirúrgico que importa para la investigación, los registros y la cirugía de revisión.",
   "hl-barcode-title": "Escaneo de código de barras y UDI",

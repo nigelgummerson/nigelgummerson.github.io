@@ -18,7 +18,7 @@
   "how-h2": "Plan it. Scan it. Keep it.",
   "how-sub": "Fra den preoperative planen til et dokument du kan bruke.",
   "step1-title": "Planlegg",
-  "step1-p": "Utform konstruksjonen nivå for nivå: skruer, stag, mellomvirvelbur, osteotomier og korreksjonskrefter, på normal eller variant anatomi.",
+  "step1-p": "Utform konstruksjonen nivå for nivå: skruer, stag, mellomvirvelbur, osteotomier og korreksjonskrefter, på normal eller variant anatomi. Den registrerer osteotomien og den tiltenkte korreksjonen; korreksjonsvinkler kommer fra dedikert programvare for deformitetsplanlegging.",
   "step2-title": "Skann, eller bare dokumenter",
   "step2-p": "Registrer implantatene du brukte. Skann strekkodene for å fylle inn system, størrelse, lot og utløp automatisk, eller skriv inn størrelsene for hånd. Det går like raskt når skruer kommer på et ikke-sterilt brett uten emballasje å skanne.",
   "step3-title": "Behold",
@@ -61,7 +61,7 @@
   "mfr-card-button": "Send STG- + GTIN-data på e-post",
 
   "about-h2": "Plan og dokument for ryggradsinstrumentering <span class=\"pill\">Gratis</span>",
-  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.50.03-beta",
+  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.51.00-beta",
   "about-lead": "Et digitalt dokumentasjonsverktøy for instrumentering ved ryggkirurgi. Det dokumenterer den preoperative planen og den postoperative konstruksjonen, og erstatter håndtegnede diagrammer med et strukturert, eksporterbart format. Nettappen er hovedmåten å bruke det på og kjører i enhver moderne nettleser på en tilkoblet sykehusmaskin. Telefonappene gir rask implantatskanning på operasjonsstuen, og en enkeltfil offline-versjon dekker den sjeldne luftgapede maskinen som ikke kan laste nettappen selv én gang.",
 
   "hl-record-title": "Det komplette dokumentet",
@@ -71,7 +71,9 @@
   "hl-cages-title": "Bur, skiver og osteotomier",
   "hl-cages-desc": "Mellomvirvelbur (ACDF til ALIF), cervikal og lumbal skiveprotese, Schwab-osteotomier og korpektomi.",
   "hl-deformity-title": "Deformitetsplanlegging",
-  "hl-deformity-desc": "Korreksjonskrefter og nivåspesifikke skruetrajektorier (pedikkel, lateral masse, kortikal, translaminær).",
+  "hl-deformity-desc": "Plassering av forankring (skruer, kroker, bånd), planlagte korreksjonskrefter.",
+  "hl-screws-title": "Skrueplassering",
+  "hl-screws-desc": "Velg riktig trajektorie for hvert nivå: pedikkel, lateral masse, kortikal (CBT), pars, translaminær og transartikulær. Den projiserte skaftvisningen bruker publiserte konvergensvinkler til illustrasjon.",
   "hl-decompression-title": "Dekompresjon",
   "hl-decompression-desc": "Kartlegg selve den benete dekompresjonen per nivå og side ved hjelp av Lee zones (sentral, lateral recess, foraminal, ekstraforaminal). Den kirurgiske detaljen som betyr noe for forskning, registre og revisjonskirurgi.",
   "hl-barcode-title": "Strekkode- og UDI-skanning",

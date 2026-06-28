@@ -18,7 +18,7 @@
   "how-h2": "Plan it. Scan it. Keep it.",
   "how-sub": "From the pre-operative plan to a record you can use.",
   "step1-title": "Plan",
-  "step1-p": "Design the construct level by level: screws, rods, cages, osteotomies and correction forces, across normal or variant anatomy.",
+  "step1-p": "Design the construct level by level: screws, rods, cages, osteotomies and correction forces, across normal or variant anatomy. It records the osteotomy and intended correction; correction angles come from dedicated deformity-planning software.",
   "step2-title": "Scan, or just record",
   "step2-p": "Record the implants you used. Scan the barcodes to auto-fill the system, size, lot and expiry, or enter the sizes by hand. That is just as quick when screws come on a non-sterile tray with no packaging to scan.",
   "step3-title": "Keep",
@@ -61,7 +61,7 @@
   "mfr-card-button": "Email STG + GTIN data",
 
   "about-h2": "Spinal Instrumentation Plan &amp; Record <span class=\"pill\">Free</span>",
-  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.50.03-beta",
+  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.51.00-beta",
   "about-lead": "A digital documentation tool for spinal surgery instrumentation. It records the pre-operative plan and the post-operative construct, replacing hand-drawn diagrams with a structured, exportable format. The web app is the main way to use it and runs in any modern browser on a connected hospital computer. Phone apps add quick implant scanning in theatre, and a single-file offline build covers the rare air-gapped machine that cannot load the web app even once.",
 
   "hl-record-title": "The complete record",
@@ -71,7 +71,9 @@
   "hl-cages-title": "Cages, discs & osteotomies",
   "hl-cages-desc": "Interbody cages (ACDF to ALIF), cervical and lumbar disc replacement, Schwab osteotomies and corpectomy.",
   "hl-deformity-title": "Deformity planning",
-  "hl-deformity-desc": "Correction forces and level-specific screw trajectories (pedicle, lateral mass, cortical, translaminar).",
+  "hl-deformity-desc": "Anchor placement (screws, hooks, bands), planned correction forces.",
+  "hl-screws-title": "Screw placement",
+  "hl-screws-desc": "Choose the right trajectory for each level: pedicle, lateral mass, cortical (CBT), pars, translaminar and transarticular. The projected shank view uses published convergence angles for illustration.",
   "hl-decompression-title": "Decompression",
   "hl-decompression-desc": "Map the bony decompression itself by level and side using the Lee zones (central, lateral recess, foraminal, extraforaminal). The surgical detail that matters for research, registries and revision surgery.",
   "hl-barcode-title": "Barcode & UDI scanning",

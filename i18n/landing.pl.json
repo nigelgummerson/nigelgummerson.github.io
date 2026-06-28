@@ -18,7 +18,7 @@
   "how-h2": "Zaplanuj. Zeskanuj. Zachowaj.",
   "how-sub": "Od planu przedoperacyjnego do użytecznej dokumentacji.",
   "step1-title": "Planuj",
-  "step1-p": "Zaprojektuj konstrukcję poziom po poziomie: śruby, pręty, klatki, osteotomie i siły korekcyjne, w anatomii prawidłowej lub odmiennej.",
+  "step1-p": "Zaprojektuj konstrukcję poziom po poziomie: śruby, pręty, klatki, osteotomie i siły korekcyjne, w anatomii prawidłowej lub odmiennej. Rejestruje osteotomię i zamierzoną korekcję; kąty korekcji pochodzą z dedykowanego oprogramowania do planowania deformacji.",
   "step2-title": "Zeskanuj lub po prostu zapisz",
   "step2-p": "Zapisz użyte implanty. Zeskanuj kody kreskowe, aby automatycznie uzupełnić system, rozmiar, numer partii i datę ważności, albo wprowadź rozmiary ręcznie. Jest to równie szybkie, gdy śruby są na niesterylnej tacy bez opakowania do zeskanowania.",
   "step3-title": "Zachowaj",
@@ -61,7 +61,7 @@
   "mfr-card-button": "Wyślij e-mailem dane STG + GTIN",
 
   "about-h2": "Plan i dokumentacja instrumentacji kręgosłupa <span class=\"pill\">Bezpłatne</span>",
-  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.50.03-beta",
+  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.51.00-beta",
   "about-lead": "Cyfrowe narzędzie dokumentacyjne dla instrumentacji w chirurgii kręgosłupa. Zapisuje plan przedoperacyjny oraz pooperacyjną konstrukcję, zastępując odręczne schematy uporządkowanym, gotowym do eksportu formatem. Aplikacja internetowa to główny sposób korzystania i działa w każdej nowoczesnej przeglądarce na podłączonym komputerze szpitalnym. Aplikacje na telefon dodają szybkie skanowanie implantów na sali operacyjnej, a jednoplikowa wersja offline obsługuje rzadkie odizolowane od sieci komputery, które nie mogą wczytać aplikacji internetowej nawet raz.",
 
   "hl-record-title": "Kompletna dokumentacja",
@@ -71,7 +71,9 @@
   "hl-cages-title": "Klatki, dyski i osteotomie",
   "hl-cages-desc": "Klatki międzytrzonowe (od ACDF po ALIF), wymiana dysku szyjnego i lędźwiowego, osteotomie Schwab i korpektomia.",
   "hl-deformity-title": "Planowanie deformacji",
-  "hl-deformity-desc": "Siły korekcyjne i trajektorie śrub specyficzne dla poziomu (przeznasadowa, przez masyw boczny, korowa, przezblaszkowa).",
+  "hl-deformity-desc": "Rozmieszczenie elementów kotwiących (śruby, haki, taśmy), zaplanowane siły korekcyjne.",
+  "hl-screws-title": "Umiejscowienie śrub",
+  "hl-screws-desc": "Wybierz właściwą trajektorię dla każdego poziomu: przeznasadowa, przez masyw boczny, korowa (CBT), przezcieśniowa, przezblaszkowa i przezstawowa. Rzutowany widok trzonu wykorzystuje opublikowane kąty konwergencji w celach poglądowych.",
   "hl-decompression-title": "Dekompresja",
   "hl-decompression-desc": "Odwzoruj samą dekompresję kostną według poziomu i strony, używając Lee zones (centralna, zachyłek boczny, otworowa, pozaotworowa). Szczegół chirurgiczny istotny dla badań, rejestrów i operacji rewizyjnych.",
   "hl-barcode-title": "Skanowanie kodów kreskowych i UDI",
