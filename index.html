@@ -37,6 +37,8 @@
   .nav .links a:hover{ color:#fff; }
   .nav .links a.cta{ color:#fff; background:var(--accent); padding:7px 15px; border-radius:7px; font-weight:600; }
   .nav .links a.cta:hover{ background:var(--accent-d); }
+  .lang-select{ background:#13263a; color:#cbd5e1; border:1px solid #33455a; border-radius:7px; padding:6px 8px; font-size:.82rem; font-family:var(--sans); cursor:pointer; max-width:9.5rem; }
+  .lang-select:hover{ border-color:#5b7186; color:#fff; }
   @media (max-width:600px){ .nav .links a.hide-sm{ display:none; } }
 
   .hero{ background:linear-gradient(160deg,#0d1b2a 0%,#102338 60%,#0c2230 100%); color:#e8edf3; overflow:hidden; }
@@ -183,7 +185,8 @@
   <span class="links">
     <a class="hide-sm" href="#about">About</a>
     <a class="hide-sm" href="/spine/quick-reference.html">Guide</a>
-    <a href="#manufacturers">Manufacturers</a>
+    <a class="hide-sm" href="#manufacturers">Manufacturers</a>
+    <select id="langSelect" class="lang-select" aria-label="Choose language"></select>
     <a class="cta" href="/spine/">Open app</a>
   </span>
 </nav>
@@ -381,6 +384,51 @@
 <footer class="footer">
   <p>Developed in Leeds, United Kingdom. Dual-licensed (Free Clinical Use / Commercial). Distribution via <a href="https://github.com/nigelgummerson/spine/releases">GitHub Releases</a>.</p>
 </footer>
+
+<script>
+  // Language chooser. The page copy is English for now; the 22-language
+  // translation lands later. The value is shared-origin localStorage
+  // 'spine_planner_lang', so choosing a language here carries straight into
+  // the app and the quick reference (both already fully translated): pick your
+  // language, then "Open app" launches it localised. Phase 2 adds the landing
+  // text swap + RTL (ar/he) from a translation dictionary.
+  (function () {
+    var LANGS = [
+      { code: 'en', name: 'English' }, { code: 'ar', name: 'العربية', rtl: 1 }, { code: 'da', name: 'Dansk' },
+      { code: 'de', name: 'Deutsch' }, { code: 'el', name: 'Ελληνικά' }, { code: 'es', name: 'Español' },
+      { code: 'he', name: 'עברית', rtl: 1 }, { code: 'hi', name: 'हिन्दी' }, { code: 'fr', name: 'Français' },
+      { code: 'it', name: 'Italiano' }, { code: 'ja', name: '日本語' }, { code: 'ko', name: '한국어' },
+      { code: 'nl', name: 'Nederlands' }, { code: 'nb', name: 'Norsk bokmål' }, { code: 'pl', name: 'Polski' },
+      { code: 'pt', name: 'Português' }, { code: 'ru', name: 'Русский' }, { code: 'fi', name: 'Suomi' },
+      { code: 'sv', name: 'Svenska' }, { code: 'tr', name: 'Türkçe' }, { code: 'uk', name: 'Українська' },
+      { code: 'zh-Hans', name: '简体中文' }
+    ];
+    var SUPPORTED = {}; LANGS.forEach(function (l) { SUPPORTED[l.code] = true; });
+    var ALIASES = { no: 'nb', nn: 'nb' };
+    function detect() {
+      try { var s = localStorage.getItem('spine_planner_lang'); if (s && SUPPORTED[s]) return s; } catch (e) {}
+      var nav = (navigator.language || 'en').toLowerCase();
+      if (SUPPORTED[nav]) return nav;
+      if (nav.indexOf('zh') === 0) return 'zh-Hans';
+      var short = nav.split('-')[0];
+      if (ALIASES[short] && SUPPORTED[ALIASES[short]]) return ALIASES[short];
+      if (SUPPORTED[short]) return short;
+      return 'en';
+    }
+    var sel = document.getElementById('langSelect');
+    if (!sel) return;
+    LANGS.forEach(function (l) { var o = document.createElement('option'); o.value = l.code; o.textContent = l.name; sel.appendChild(o); });
+    var cur = detect();
+    sel.value = cur;
+    document.documentElement.lang = cur;
+    sel.addEventListener('change', function () {
+      var code = sel.value;
+      try { localStorage.setItem('spine_planner_lang', code); } catch (e) {}
+      document.documentElement.lang = code;
+      // Phase 2: swap landing strings from the dictionary + set <html dir> for ar/he.
+    });
+  })();
+</script>
 
 <script>
   // Subtle nicety: tag the card matching the visitor's device. The web app is
