@@ -54,7 +54,7 @@
   "mfr-card-blurb": "Envoyez par e-mail vos STG et votre export GTIN/UDI et nous ajouterons le système au catalogue.",
   "mfr-card-button": "Envoyer les données STG + GTIN par e-mail",
   "about-h2": "Plan et compte rendu d'instrumentation rachidienne <span class=\"pill\">Gratuit</span>",
-  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.52.00-beta",
+  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.52.01-beta",
   "about-lead": "Un outil de documentation numérique pour l'instrumentation de la chirurgie rachidienne. Il enregistre le plan préopératoire et le montage postopératoire, remplaçant les schémas dessinés à la main par un format structuré et exportable. L'application web est le principal mode d'utilisation et fonctionne dans tout navigateur moderne sur un ordinateur hospitalier connecté. Les applications mobiles ajoutent une lecture rapide des implants au bloc, et une version hors ligne en fichier unique couvre la rare machine isolée du réseau qui ne peut pas charger l'application web ne serait-ce qu'une fois.",
   "hl-record-title": "Le compte rendu complet",
   "hl-record-desc": "Documentez tout le cas en un seul endroit : chaque implant, ainsi que la décompression, les ostéotomies, les plaques, les tiges et les connecteurs transverses. Un compte rendu de montage complet qui complète la navigation et la robotique.",

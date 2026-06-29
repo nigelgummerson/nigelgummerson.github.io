@@ -54,7 +54,7 @@
   "mfr-card-blurb": "Invia via email le tue STG e l'esportazione GTIN/UDI e aggiungeremo il sistema al catalogo.",
   "mfr-card-button": "Invia via email dati STG + GTIN",
   "about-h2": "Piano e Registro di Strumentazione Vertebrale <span class=\"pill\">Gratuito</span>",
-  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.52.00-beta",
+  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.52.01-beta",
   "about-lead": "Uno strumento di documentazione digitale per la strumentazione della chirurgia vertebrale. Registra il piano preoperatorio e il costrutto postoperatorio, sostituendo i diagrammi disegnati a mano con un formato strutturato ed esportabile. L'app web è il modo principale per usarlo e funziona in qualsiasi browser moderno su un computer ospedaliero connesso. Le app per telefono aggiungono la scansione rapida degli impianti in sala, e una versione offline in file singolo copre la rara macchina isolata dalla rete che non può caricare l'app web nemmeno una volta.",
   "hl-record-title": "Il registro completo",
   "hl-record-desc": "Documenta l'intero caso in un unico posto: ogni impianto, oltre alla decompressione, alle osteotomie, alle placche, alle barre e ai connettori trasversali. Un registro completo del costrutto che integra navigazione e robotica.",
