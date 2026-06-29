@@ -50,6 +50,7 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   .lang-select{ background:#13263a; color:#cbd5e1; border:1px solid #33455a; border-radius:7px; padding:6px 8px; font-size:.82rem; font-family:var(--sans); cursor:pointer; max-width:9.5rem; }
   .lang-select:hover{ border-color:#5b7186; color:#fff; }
   @media (max-width:600px){ .nav .links a.hide-sm{ display:none; } }
+  @media (max-width:420px){ .nav{ padding:11px 14px; } .nav .brand{ font-size:.9rem; gap:7px; } .nav .links{ gap:10px; } .lang-select{ max-width:6.2rem; } }
 
   .hero{ background:linear-gradient(160deg,#0d1b2a 0%,#102338 60%,#0c2230 100%); color:#e8edf3; overflow:hidden; }
   .hero-in{ max-width:1120px; margin:0 auto; padding:62px 24px 56px; display:grid; grid-template-columns:1.02fr .98fr; gap:48px; align-items:center; }
@@ -87,7 +88,14 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   .shelf-pad img{ border-radius:8px; }
   .shelf-phone{ border-radius:15px; padding:5px; width:66px; margin-inline-start:-18px; position:relative; z-index:2; }
   .shelf-phone img{ border-radius:10px; }
-  @media (max-width:840px){ .montage-shelf{ align-self:center; gap:30px; } }
+  @media (max-width:840px){
+    /* single-column hero: let grid tracks shrink below content min-content so the
+       fixed-width montage can't force the text column wider than the viewport (clip fix) */
+    .hero-in > *{ min-width:0; }
+    .montage-shelf{ align-self:center; gap:30px; flex-wrap:wrap; max-width:100%; }
+    .montage-shelf .cluster{ max-width:100%; }
+    .montage-shelf img, .montage-shelf .shelf-dev{ max-width:100%; }
+  }
   /* Click any screenshot to zoom (full-resolution lightbox). */
   .zoomable{ cursor:zoom-in; }
   #lightbox{ position:fixed; inset:0; z-index:200; display:none; align-items:center; justify-content:center;
