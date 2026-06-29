@@ -61,7 +61,7 @@
   "mfr-card-button": "Wyślij e-mailem dane STG + GTIN",
 
   "about-h2": "Plan i dokumentacja instrumentacji kręgosłupa <span class=\"pill\">Bezpłatne</span>",
-  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.51.01-beta",
+  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.52.00-beta",
   "about-lead": "Cyfrowe narzędzie dokumentacyjne dla instrumentacji w chirurgii kręgosłupa. Zapisuje plan przedoperacyjny oraz pooperacyjną konstrukcję, zastępując odręczne schematy uporządkowanym, gotowym do eksportu formatem. Aplikacja internetowa to główny sposób korzystania i działa w każdej nowoczesnej przeglądarce na podłączonym komputerze szpitalnym. Aplikacje na telefon dodają szybkie skanowanie implantów na sali operacyjnej, a jednoplikowa wersja offline obsługuje rzadkie odizolowane od sieci komputery, które nie mogą wczytać aplikacji internetowej nawet raz.",
 
   "hl-record-title": "Kompletna dokumentacja",
