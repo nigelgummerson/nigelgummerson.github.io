@@ -351,9 +351,8 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
           <span class="tag here" data-i18n="dl-your-device">Your device</span>
           <span class="glyph"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.48l1.84-3.18a.4.4 0 0 0-.7-.4l-1.86 3.23a11.4 11.4 0 0 0-9.76 0L5.26 5.9a.4.4 0 1 0-.7.4L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg></span>
           <h3 data-i18n="dl-android-title">Android</h3>
-          <p class="plat-sub" data-i18n="dl-android-blurb">Native app (.apk). The full implant (GTIN) catalogue is bundled in the app, and barcode scanning is faster than the browser. Download on the phone and tap to install.</p>
-          <a class="act line" href="https://github.com/nigelgummerson/spine/releases/download/native-preview/Skeletal-Plan-3.52.3-android.apk" data-i18n="dl-android-button">Download for Android</a>
-          <p class="fine warn" data-i18n="dl-android-fine">Preview: allow &ldquo;install unknown apps&rdquo; when asked.</p>
+          <p class="plat-sub" data-i18n="dl-android-blurb">On Google Play. The full implant (GTIN) catalogue is bundled in the app, and barcode scanning is faster than the browser.</p>
+          <a class="act line" href="https://play.google.com/store/apps/details?id=com.skeletalsurgery.spineplanner" data-i18n="dl-android-button">Get it on Google Play</a>
         </div>
 
         <div class="dl" data-platform="desktop">
@@ -525,7 +524,7 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
       web:     "Skeletal Plan runs right here in your browser. No install needed.",
       mac:     "Detected <b>macOS</b>. Use Skeletal Plan in your browser; there's no separate Mac app.",
       windows: "Detected <b>Windows</b>. Use Skeletal Plan in your browser; there's no separate Windows app.",
-      android: "Detected <b>Android</b>. Install the test app below, or just use the browser.",
+      android: "Detected <b>Android</b>. Get it on Google Play below, or just use the browser.",
       ios:     "Detected <b>iPhone / iPad</b>. Use it in Safari (Add to Home Screen); the native app is in testing."
     };
     if (det) det.innerHTML = msg[plat] || msg.web;
