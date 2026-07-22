@@ -45,8 +45,8 @@
   "dl-desktop-blurb": "On a desktop or laptop, use Skeletal Plan in your browser. It's always up to date.",
   "dl-desktop-button": "Open in your browser",
   "dl-ios-title": "iPhone & iPad",
-  "dl-ios-blurb": "A native iOS build is fully functional and in internal testing with a small group. You can also use it in Safari today. Add to Home Screen to pin it as an app.",
-  "dl-ios-status": "In internal testing",
+  "dl-ios-blurb": "On the App Store. The full implant (GTIN) catalogue is bundled in the app, and barcode scanning is faster than the browser.",
+  "dl-ios-button": "Download on the App Store",
   "dl-offline-note": "Only for a PC that can never reach the network, so it can't open the web app at all. A point-in-time <a href=\"https://github.com/nigelgummerson/spine/releases/latest\">offline single-file build</a> can be copied onto it (e.g. by USB), and re-copied to update.",
 
   "mfr-h2": "For implant manufacturers",

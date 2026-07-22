@@ -45,8 +45,8 @@
   "dl-desktop-blurb": "På en stasjonær eller bærbar maskin bruker du Skeletal Plan i nettleseren. Den er alltid oppdatert.",
   "dl-desktop-button": "Åpne i nettleseren",
   "dl-ios-title": "iPhone og iPad",
-  "dl-ios-blurb": "En native iOS-versjon er fullt funksjonell og under intern testing med en liten gruppe. Du kan også bruke den i Safari i dag. Legg til på Hjem-skjerm for å feste den som en app.",
-  "dl-ios-status": "Under intern testing",
+  "dl-ios-blurb": "På App Store. Hele implantatkatalogen (GTIN) er innebygd i appen, og strekkodeskanning er raskere enn i nettleseren.",
+  "dl-ios-button": "Last ned på App Store",
   "dl-offline-note": "Bare for en PC som aldri kan nå nettverket, slik at den ikke kan åpne nettappen i det hele tatt. En tidsbestemt <a href=\"https://github.com/nigelgummerson/spine/releases/latest\">offline enkeltfil-versjon</a> kan kopieres over på den (f.eks. via USB), og kopieres på nytt for å oppdatere.",
 
   "mfr-h2": "For implantatprodusenter",

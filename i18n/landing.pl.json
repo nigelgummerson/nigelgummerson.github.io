@@ -45,8 +45,8 @@
   "dl-desktop-blurb": "Na komputerze stacjonarnym lub laptopie korzystaj ze Skeletal Plan w przeglądarce. Zawsze jest aktualna.",
   "dl-desktop-button": "Otwórz w przeglądarce",
   "dl-ios-title": "iPhone i iPad",
-  "dl-ios-blurb": "Natywna wersja na iOS jest w pełni funkcjonalna i znajduje się w testach wewnętrznych w małej grupie. Możesz też korzystać z niej już dziś w Safari. Dodaj do ekranu głównego, aby przypiąć ją jak aplikację.",
-  "dl-ios-status": "W testach wewnętrznych",
+  "dl-ios-blurb": "W App Store. Pełny katalog implantów (GTIN) jest wbudowany w aplikację, a skanowanie kodów kreskowych jest szybsze niż w przeglądarce.",
+  "dl-ios-button": "Pobierz z App Store",
   "dl-offline-note": "Tylko dla komputera, który nigdy nie ma dostępu do sieci i wcale nie może otworzyć aplikacji internetowej. Można na niego skopiować (np. przez USB) <a href=\"https://github.com/nigelgummerson/spine/releases/latest\">jednoplikową wersję offline</a> z danego momentu i skopiować ponownie, aby zaktualizować.",
 
   "mfr-h2": "Dla producentów implantów",

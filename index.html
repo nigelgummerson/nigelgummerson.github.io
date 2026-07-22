@@ -220,7 +220,7 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
   "description": "Free digital surgical planning tool for spinal surgeons. Visual pre-operative instrumentation planning and post-operative construct recording with PDF export. Runs in any modern browser, offline on hospital computers.",
   "url": "https://plan.skeletalsurgery.com/spine/",
   "applicationCategory": "HealthApplication",
-  "operatingSystem": "Web, Android, macOS, Windows",
+  "operatingSystem": "Web, iOS, Android, macOS, Windows",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
   "author": {
     "@type": "Person",
@@ -228,7 +228,7 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
     "jobTitle": "Spinal Surgeon",
     "affiliation": { "@type": "Organization", "name": "Leeds Teaching Hospitals NHS Trust" }
   },
-  "license": "https://plan.skeletalsurgery.com/LICENSE",
+  "license": "https://plan.skeletalsurgery.com/#licence",
   "inLanguage": ["en","ar","de","fr","es","he","hi","it","ja","ko","pt","sv","nb","da","fi","nl","pl","el","tr","ru","uk","zh-Hans"],
   "softwareVersion": "v3.54.01-beta"
 }
@@ -366,11 +366,12 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
           <a class="act line" href="/spine/" data-i18n="dl-desktop-button">Open in your browser</a>
         </div>
 
-        <div class="dl muted" data-platform="ios">
+        <div class="dl" data-platform="ios">
+          <span class="tag here" data-i18n="dl-your-device">Your device</span>
           <span class="glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.6 5.4h2.8"/></svg></span>
           <h3 data-i18n="dl-ios-title">iPhone &amp; iPad</h3>
-          <p class="plat-sub" data-i18n="dl-ios-blurb">A native iOS build is fully functional and in internal testing with a small group. You can also use it in Safari today. Add to Home Screen to pin it as an app.</p>
-          <p class="status" data-i18n="dl-ios-status">In internal testing</p>
+          <p class="plat-sub" data-i18n="dl-ios-blurb">On the App Store. The full implant (GTIN) catalogue is bundled in the app, and barcode scanning is faster than the browser.</p>
+          <a class="act line" href="https://apps.apple.com/app/id6782600510" data-i18n="dl-ios-button">Download on the App Store</a>
         </div>
 
       </div>
@@ -438,7 +439,7 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
       <p>Population-based reference data (screw sizes, pedicle dimensions, vertebral proportions) is drawn from published adult morphometry literature and represents group averages. <strong>Individual anatomy varies.</strong> The surgeon must verify all dimensions against the patient's own imaging. No reference data is provided for paediatric patients (under 14 years).</p>
       <p>The <strong>operating surgeon bears full responsibility</strong> for all clinical decisions, including implant selection, placement, and verification at the point of use (WHO Surgical Safety Checklist). The surgical record is only as accurate as the information entered by the user.</p>
       <p>All patient data remains on the local device. No data is transmitted to any server. There is no analytics, telemetry, or user tracking. Session Privacy is enabled by default &mdash; case data is not stored unless the user explicitly enables persistence. Users are responsible for data handling under their local regulations (e.g. UK GDPR, EU GDPR, HIPAA, Caldicott principles).</p>
-      <p>This software is provided as-is under a <strong>Free Clinical Use Licence</strong> (free for clinical planning, intra-operative documentation, teaching, and research — no redistribution or commercial use), with no warranty of any kind, express or implied. A separate <strong>Commercial Licence</strong> is available for redistribution, white-labelling, or commercial use of the dataset and translations — contact <a href="mailto:skeletalsurgery@icloud.com">skeletalsurgery@icloud.com</a>. Versions prior to v3.0.0 were distributed under GNU GPLv3; recipients of those versions retain their GPL rights to those specific versions.</p>
+      <p id="licence">This software is provided as-is under a <strong>Free Clinical Use Licence</strong> (free for clinical planning, intra-operative documentation, teaching, and research — no redistribution or commercial use), with no warranty of any kind, express or implied. A separate <strong>Commercial Licence</strong> is available for redistribution, white-labelling, or commercial use of the dataset and translations — contact <a href="mailto:skeletalsurgery@icloud.com">skeletalsurgery@icloud.com</a>. Versions prior to v3.0.0 were distributed under GNU GPLv3; recipients of those versions retain their GPL rights to those specific versions.</p>
     </div>
   </section>
 
@@ -518,14 +519,14 @@ window.addEventListener('load',_top); window.addEventListener('pageshow',_top);<
     else if (/Windows/i.test(ua)) plat = 'windows';
     var sel = (plat === 'mac' || plat === 'windows') ? 'desktop' : plat;
     var card = document.querySelector('.dl[data-platform="' + sel + '"]');
-    if (card && plat !== 'ios') card.classList.add('here-on');
+    if (card) card.classList.add('here-on');
     var det = document.getElementById('detect');
     var msg = {
       web:     "Skeletal Plan runs right here in your browser. No install needed.",
       mac:     "Detected <b>macOS</b>. Use Skeletal Plan in your browser; there's no separate Mac app.",
       windows: "Detected <b>Windows</b>. Use Skeletal Plan in your browser; there's no separate Windows app.",
       android: "Detected <b>Android</b>. Get it on Google Play below, or just use the browser.",
-      ios:     "Detected <b>iPhone / iPad</b>. Use it in Safari (Add to Home Screen); the native app is in testing."
+      ios:     "Detected <b>iPhone / iPad</b>. Download it on the App Store below, or just use the browser."
     };
     if (det) det.innerHTML = msg[plat] || msg.web;
   })();
