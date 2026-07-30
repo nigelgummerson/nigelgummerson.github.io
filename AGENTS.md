@@ -53,3 +53,13 @@ spine-surgery/planning/skeletalsurgery-landing/
 - **AGENTS.md** — this file; static project description for any AI.
 - **CLAUDE.md** — session history and next steps.
 - Read `CLAUDE.md` for current state before making changes.
+
+## Done when
+
+type: area
+status: draft
+review: as spine-planner evolves
+
+<!-- Drafted 2026-07-30 from this project's own PROJECT-GUIDE.md entry.
+     Correct it and delete the `status: draft` line when you next work here.
+     Format: tools/project-index/STATE-FORMAT.md -->
