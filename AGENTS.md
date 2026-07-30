@@ -9,7 +9,7 @@ Deployed via GitHub Pages from `nigelgummerson/nigelgummerson.github.io`; custom
 ## Structure
 
 ```
-spine-surgery/planning/skeletalsurgery-landing/
+products/skeletalsurgery-landing/
 ├── index.html          # Landing page (hand-authored HTML + embedded CSS)
 ├── CNAME               # plan.skeletalsurgery.com
 ├── robots.txt

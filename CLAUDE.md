@@ -32,8 +32,8 @@ skeletalsurgery-landing/
 ## Cross-References
 
 - **Related Projects:**
-  - `spine-surgery/planning/spine-planner/` — the main tool this page links to
-  - `spine-surgery/planning/spine-planner-old-redirect/` — legacy redirect stub for the previous deployment URL
+  - `products/spine-planner/` — the main tool this page links to
+  - `products/spine-planner-old-redirect/` — legacy redirect stub for the previous deployment URL
 - **Live:** https://plan.skeletalsurgery.com/
 
 ## Session History
