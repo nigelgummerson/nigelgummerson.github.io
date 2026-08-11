@@ -57,9 +57,4 @@ products/skeletalsurgery-landing/
 ## Done when
 
 type: area
-status: draft
-review: as spine-planner evolves
-
-<!-- Drafted 2026-07-30 from this project's own PROJECT-GUIDE.md entry.
-     Correct it and delete the `status: draft` line when you next work here.
-     Format: tools/project-index/STATE-FORMAT.md -->
+review: every six months, and whenever a new tool ships
