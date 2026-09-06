@@ -1,11 +1,14 @@
 [
   {
-    "relation": [ "delegate_permission/common.handle_all_urls" ],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.skeletalsurgery.spineplanner",
       "sha256_cert_fingerprints": [
-        "0C:79:CB:57:BD:1B:ED:D0:0C:C5:6D:98:53:85:3D:E5:0E:8A:9C:D1:E8:D5:F8:C2:B1:E8:78:D2:8B:EE:B3:14"
+        "0C:79:CB:57:BD:1B:ED:D0:0C:C5:6D:98:53:85:3D:E5:0E:8A:9C:D1:E8:D5:F8:C2:B1:E8:78:D2:8B:EE:B3:14",
+        "83:56:60:D5:07:BE:B5:82:CD:1A:21:FF:4C:06:0C:F0:D8:7E:39:DB:11:98:A1:F9:98:03:E1:FB:71:98:18:21"
       ]
     }
   }
