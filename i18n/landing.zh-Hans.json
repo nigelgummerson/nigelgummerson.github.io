@@ -74,7 +74,7 @@
   "hl-anatomy-title": "变异解剖",
   "hl-anatomy-desc": "腰骶移行节段以及非标准的胸椎和腰椎节段数。",
   "hl-export-title": "导出与重新加载",
-  "hl-export-desc": "导出 PDF 用于患者病历。它还附带链接和 QR，可将整个规划重新加载回应用中，因此同一份 PDF 既可作为 EPR 中的可视记录，又可作为研究来源。也支持 JPG 和 JSON 导出。",
+  "hl-export-desc": "导出 PDF 用于患者病历。PDF 包含完整病例，在应用中打开即可重新加载规划，其中的链接则可在不含患者信息的情况下重新打开规划。同一份 PDF 既可作为 EPR 中的可视记录，又可作为研究来源。也支持 JPG 和 JSON 导出。",
   "hl-share-title": "共享以订购",
   "hl-share-desc": "QR 码和链接可在去除患者信息（姓名、ID、日期、术者）后共享规划。可安全地发送给手术室、行政人员或公司代表以订购正确的植入物。",
   "hl-multilingual-title": "多语言",

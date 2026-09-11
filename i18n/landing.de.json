@@ -74,7 +74,7 @@
   "hl-anatomy-title": "Anatomische Varianten",
   "hl-anatomy-desc": "Lumbosakrale Übergangshöhen und nicht standardmäßige thorakale und lumbale Anzahlen.",
   "hl-export-title": "Export & erneutes Laden",
-  "hl-export-desc": "Exportieren Sie ein PDF für die Patientenakte. Es enthält außerdem einen Link und einen QR-Code, die den gesamten Plan zurück in die App laden, sodass dasselbe PDF zugleich als visuelle Aufzeichnung im EPR und als Forschungsquelle dient. Auch JPG- und JSON-Export.",
+  "hl-export-desc": "Exportieren Sie ein PDF für die Patientenakte. Das PDF enthält den vollständigen Fall, sodass das Öffnen in der App den Plan wieder lädt, und sein Link öffnet den Plan ohne Patientendaten. Dasselbe PDF dient zugleich als visuelle Aufzeichnung im EPR und als Forschungsquelle. Auch JPG- und JSON-Export.",
   "hl-share-title": "Teilen zum Bestellen",
   "hl-share-desc": "QR-Codes und Links teilen den Plan mit entfernten Patientendaten (Name, ID, Datumsangaben, Operateur). Sicher an OP, Verwaltung oder Firmenvertreter zu senden, um die richtigen Implantate zu bestellen.",
   "hl-multilingual-title": "Mehrsprachig",

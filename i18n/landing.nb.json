@@ -82,7 +82,7 @@
   "hl-anatomy-title": "Variant anatomi",
   "hl-anatomy-desc": "Transisjonelle lumbosakrale nivåer og ikke-standard antall thorakale og lumbale virvler.",
   "hl-export-title": "Eksporter og last inn på nytt",
-  "hl-export-desc": "Eksporter en PDF til pasientjournalen. Den bærer også med seg en lenke og QR som laster hele planen tilbake inn i appen, slik at den samme PDF-en både er et visuelt dokument i EPR og en forskningskilde. JPG- og JSON-eksport også.",
+  "hl-export-desc": "Eksporter en PDF til pasientjournalen. PDF-en inneholder hele saken, slik at planen lastes inn igjen når den åpnes i appen, og lenken i den gjenåpner planen uten pasientdetaljer. Den samme PDF-en er både et visuelt dokument i EPR og en forskningskilde. JPG- og JSON-eksport også.",
   "hl-share-title": "Del for bestilling",
   "hl-share-desc": "QR-koder og lenker deler planen med pasientopplysninger fjernet (navn, ID, datoer, kirurg). Trygt å sende til operasjonsstuen, administrasjon eller firmarepresentanter for å bestille riktige implantater.",
   "hl-multilingual-title": "Flerspråklig",

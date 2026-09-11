@@ -74,7 +74,7 @@
   "hl-anatomy-title": "Varyant anatomi",
   "hl-anatomy-desc": "Geçiş lumbosakral seviyeler ve standart dışı torakal ve lomber sayılar.",
   "hl-export-title": "Dışa aktarma ve yeniden yükleme",
-  "hl-export-desc": "Hasta kaydı için bir PDF dışa aktarın. Ayrıca tüm planı uygulamaya geri yükleyen bir bağlantı ve QR taşır, böylece aynı PDF hem EPR'de görsel bir kayıt hem de bir araştırma kaynağı işlevi görür. JPG ve JSON dışa aktarımı da var.",
+  "hl-export-desc": "Hasta kaydı için bir PDF dışa aktarın. PDF vakanın tamamını taşır; uygulamada açıldığında plan yeniden yüklenir, bağlantısı ise planı hasta bilgileri olmadan yeniden açar. Aynı PDF hem EPR'de görsel bir kayıt hem de bir araştırma kaynağı işlevi görür. JPG ve JSON dışa aktarımı da var.",
   "hl-share-title": "Sipariş için paylaşın",
   "hl-share-desc": "QR kodları ve bağlantılar, planı hasta bilgileri kaldırılmış olarak paylaşır (ad, kimlik, tarihler, cerrah). Doğru implantları sipariş etmek için ameliyathaneye, idareye veya firma temsilcilerine göndermek güvenlidir.",
   "hl-multilingual-title": "Çok dilli",

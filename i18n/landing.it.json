@@ -74,7 +74,7 @@
   "hl-anatomy-title": "Anatomia variante",
   "hl-anatomy-desc": "Livelli lombosacrali transizionali e conteggi toracici e lombari non standard.",
   "hl-export-title": "Esportazione e ricarica",
-  "hl-export-desc": "Esporta un PDF per la cartella clinica. Contiene anche un link e un QR che ricaricano l'intero piano nell'app, così lo stesso PDF funge sia da registro visivo nell'EPR sia da fonte per la ricerca. Esportazione anche in JPG e JSON.",
+  "hl-export-desc": "Esporta un PDF per la cartella clinica. Il PDF contiene il caso completo, così aprendolo nell'app il piano viene ricaricato, e il suo link riapre il piano senza i dati del paziente. Lo stesso PDF funge sia da registro visivo nell'EPR sia da fonte per la ricerca. Esportazione anche in JPG e JSON.",
   "hl-share-title": "Condividi per ordinare",
   "hl-share-desc": "Codici QR e link condividono il piano con i dati del paziente rimossi (nome, ID, date, chirurgo). Sicuro da inviare alla sala, all'amministrazione o ai rappresentanti aziendali per ordinare gli impianti giusti.",
   "hl-multilingual-title": "Multilingue",

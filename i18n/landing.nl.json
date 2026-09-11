@@ -74,7 +74,7 @@
   "hl-anatomy-title": "Variant anatomie",
   "hl-anatomy-desc": "Lumbosacrale overgangsniveaus en niet-standaard thoracale en lumbale aantallen.",
   "hl-export-title": "Exporteren en opnieuw laden",
-  "hl-export-desc": "Exporteer een PDF voor het patiëntendossier. Het bevat ook een link en QR die het hele plan terug in de app laden, zodat dezelfde PDF dubbel dient als visueel verslag in het EPR en als onderzoeksbron. Ook export naar JPG en JSON.",
+  "hl-export-desc": "Exporteer een PDF voor het patiëntendossier. De PDF bevat de volledige casus, zodat het openen ervan in de app het plan opnieuw laadt, en de link erin opent het plan opnieuw zonder patiëntgegevens. Dezelfde PDF dient dubbel als visueel verslag in het EPR en als onderzoeksbron. Ook export naar JPG en JSON.",
   "hl-share-title": "Delen om te bestellen",
   "hl-share-desc": "QR-codes en links delen het plan met de patiëntgegevens verwijderd (naam, ID, data, chirurg). Veilig om naar de OK, administratie of bedrijfsvertegenwoordigers te sturen om de juiste implantaten te bestellen.",
   "hl-multilingual-title": "Meertalig",

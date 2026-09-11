@@ -74,7 +74,7 @@
   "hl-anatomy-title": "Poikkeava anatomia",
   "hl-anatomy-desc": "Siirtymävaiheen lumbosakraalitasot ja epästandardit rinta- ja lannerangan lukumäärät.",
   "hl-export-title": "Vienti ja uudelleenlataus",
-  "hl-export-desc": "Vie PDF potilaskertomukseen. Se sisältää myös linkin ja QR:n, jotka lataavat koko suunnitelman takaisin sovellukseen, joten sama PDF toimii sekä visuaalisena kirjauksena EPR:ssä että tutkimuslähteenä. Myös JPG- ja JSON-vienti.",
+  "hl-export-desc": "Vie PDF potilaskertomukseen. PDF sisältää koko tapauksen, joten sen avaaminen sovelluksessa lataa suunnitelman uudelleen, ja sen linkki avaa suunnitelman ilman potilastietoja. Sama PDF toimii sekä visuaalisena kirjauksena EPR:ssä että tutkimuslähteenä. Myös JPG- ja JSON-vienti.",
   "hl-share-title": "Jaa tilausta varten",
   "hl-share-desc": "QR-koodit ja linkit jakavat suunnitelman ilman potilastietoja (nimi, tunnus, päivämäärät, kirurgi). Turvallista lähettää leikkaussaliin, hallintoon tai yritysedustajille oikeiden implanttien tilaamiseksi.",
   "hl-multilingual-title": "Monikielinen",

@@ -82,7 +82,7 @@
   "hl-anatomy-title": "Odmiany anatomiczne",
   "hl-anatomy-desc": "Przejściowe poziomy lędźwiowo-krzyżowe oraz niestandardowa liczba kręgów piersiowych i lędźwiowych.",
   "hl-export-title": "Eksport i ponowne wczytanie",
-  "hl-export-desc": "Wyeksportuj PDF do dokumentacji pacjenta. Zawiera on także link i kod QR, które wczytują cały plan z powrotem do aplikacji, dzięki czemu ten sam PDF służy zarówno jako wizualna dokumentacja w EPR, jak i źródło do badań. Eksport także w JPG i JSON.",
+  "hl-export-desc": "Wyeksportuj PDF do dokumentacji pacjenta. PDF zawiera pełny przypadek, więc otwarcie go w aplikacji ponownie wczytuje plan, a jego link ponownie otwiera plan bez danych pacjenta. Ten sam PDF służy zarówno jako wizualna dokumentacja w EPR, jak i źródło do badań. Eksport także w JPG i JSON.",
   "hl-share-title": "Udostępnij, aby zamówić",
   "hl-share-desc": "Kody QR i linki udostępniają plan z usuniętymi danymi pacjenta (nazwisko, ID, daty, chirurg). Bezpieczne do wysłania na salę operacyjną, do administracji lub przedstawicieli firm w celu zamówienia właściwych implantów.",
   "hl-multilingual-title": "Wielojęzyczność",

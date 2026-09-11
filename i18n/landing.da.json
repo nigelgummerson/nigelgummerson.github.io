@@ -82,7 +82,7 @@
   "hl-anatomy-title": "Varierende anatomi",
   "hl-anatomy-desc": "Transitionelle lumbosakrale niveauer og ikke-standard thorakale og lumbale antal.",
   "hl-export-title": "Eksport og genindlæsning",
-  "hl-export-desc": "Eksportér en PDF til patientjournalen. Den indeholder også et link og en QR, der genindlæser hele planen tilbage i appen, så den samme PDF fungerer både som en visuel journal i EPR og som en forskningskilde. JPG- og JSON-eksport også.",
+  "hl-export-desc": "Eksportér en PDF til patientjournalen. PDF'en indeholder hele sagen, så når den åbnes i appen, genindlæses planen, og dens link genåbner planen uden patientoplysninger. Den samme PDF fungerer både som en visuel journal i EPR og som en forskningskilde. JPG- og JSON-eksport også.",
   "hl-share-title": "Del for at bestille",
   "hl-share-desc": "QR-koder og links deler planen med patientoplysninger fjernet (navn, ID, datoer, kirurg). Sikkert at sende til operationsstue, administration eller firmarepræsentanter for at bestille de rette implantater.",
   "hl-multilingual-title": "Flersproget",

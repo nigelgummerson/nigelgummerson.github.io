@@ -82,7 +82,7 @@
   "hl-anatomy-title": "Anatomía con variantes",
   "hl-anatomy-desc": "Niveles lumbosacros transicionales y recuentos torácicos y lumbares no estándar.",
   "hl-export-title": "Exportar y recargar",
-  "hl-export-desc": "Exporte un PDF para el registro del paciente. También incluye un enlace y un QR que recargan todo el plan de vuelta en la app, de modo que el mismo PDF sirve a la vez como registro visual en el EPR y como fuente de investigación. También exporta JPG y JSON.",
+  "hl-export-desc": "Exporte un PDF para el registro del paciente. El PDF contiene el caso completo, de modo que al abrirlo en la app se recarga el plan, y su enlace vuelve a abrir el plan sin los datos del paciente. El mismo PDF sirve a la vez como registro visual en el EPR y como fuente de investigación. También exporta JPG y JSON.",
   "hl-share-title": "Compartir para pedir",
   "hl-share-desc": "Los códigos QR y los enlaces comparten el plan con los datos del paciente eliminados (nombre, ID, fechas, cirujano). Seguro para enviar a quirófano, administración o representantes de la empresa para pedir los implantes correctos.",
   "hl-multilingual-title": "Multilingüe",

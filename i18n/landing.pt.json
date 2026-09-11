@@ -74,7 +74,7 @@
   "hl-anatomy-title": "Anatomia variante",
   "hl-anatomy-desc": "Níveis lombossagrados transicionais e contagens torácicas e lombares não padronizadas.",
   "hl-export-title": "Exportar e recarregar",
-  "hl-export-desc": "Exporte um PDF para o processo do doente. Inclui também uma ligação e um QR que recarregam todo o plano de volta na aplicação, pelo que o mesmo PDF serve simultaneamente de registo visual no EPR e de fonte de investigação. Também exporta JPG e JSON.",
+  "hl-export-desc": "Exporte um PDF para o processo do doente. O PDF contém o caso completo, pelo que abri-lo na aplicação volta a carregar o plano, e a sua ligação reabre o plano sem os dados do doente. O mesmo PDF serve simultaneamente de registo visual no EPR e de fonte de investigação. Também exporta JPG e JSON.",
   "hl-share-title": "Partilhar para encomendar",
   "hl-share-desc": "Os códigos QR e as ligações partilham o plano com os dados do doente removidos (nome, ID, datas, cirurgião). Seguro para enviar ao bloco, à administração ou aos representantes das empresas para encomendar os implantes corretos.",
   "hl-multilingual-title": "Multilingue",

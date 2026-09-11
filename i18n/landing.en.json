@@ -82,7 +82,7 @@
   "hl-anatomy-title": "Variant anatomy",
   "hl-anatomy-desc": "Transitional lumbosacral levels and non-standard thoracic and lumbar counts.",
   "hl-export-title": "Export & reload",
-  "hl-export-desc": "Export a PDF for the patient record. It also carries a link and QR that reload the whole plan back into the app, so the same PDF doubles as a visual record in the EPR and a research source. JPG and JSON export too.",
+  "hl-export-desc": "Export a PDF for the patient record. The PDF carries the complete case, so opening it in the app reloads the plan, and its link reopens the plan without patient details. The same PDF doubles as a visual record in the EPR and a research source. JPG and JSON export too.",
   "hl-share-title": "Share to order",
   "hl-share-desc": "QR codes and links share the plan with patient details removed (name, ID, dates, surgeon). Safe to send to theatre, admin or company reps to order the right implants.",
   "hl-multilingual-title": "Multilingual",
