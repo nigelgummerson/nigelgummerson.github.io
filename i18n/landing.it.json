@@ -65,6 +65,8 @@
   "hl-deformity-desc": "Posizionamento degli ancoraggi (viti, uncini, bande), forze di correzione previste.",
   "hl-screws-title": "Posizionamento delle viti",
   "hl-screws-desc": "Scegli la traiettoria giusta per ogni livello: peduncolare, massa laterale, corticale (CBT), istmica, translaminare e transarticolare. La vista proiettata del gambo usa angoli di convergenza pubblicati, a scopo illustrativo.",
+  "hl-dragsize-title": "Misura a trascinamento",
+  "hl-dragsize-desc": "Premi e trascina su un peduncolo per aggiungere una vite e impostarne la misura.",
   "hl-decompression-title": "Decompressione",
   "hl-decompression-desc": "Mappa la decompressione ossea stessa per livello e lato usando le Lee zones (centrale, recesso laterale, foraminale, extraforaminale). Il dettaglio chirurgico che conta per la ricerca, i registri e la chirurgia di revisione.",
   "hl-barcode-title": "Scansione di codici a barre e UDI",

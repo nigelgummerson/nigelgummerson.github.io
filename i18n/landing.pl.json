@@ -73,6 +73,8 @@
   "hl-deformity-desc": "Rozmieszczenie elementów kotwiących (śruby, haki, taśmy), zaplanowane siły korekcyjne.",
   "hl-screws-title": "Umiejscowienie śrub",
   "hl-screws-desc": "Wybierz właściwą trajektorię dla każdego poziomu: przeznasadowa, przez masyw boczny, korowa (CBT), przezcieśniowa, przezblaszkowa i przezstawowa. Rzutowany widok trzonu wykorzystuje opublikowane kąty konwergencji w celach poglądowych.",
+  "hl-dragsize-title": "Rozmiar przeciąganiem",
+  "hl-dragsize-desc": "Naciśnij i przeciągnij na nasadzie, aby dodać śrubę i ustawić jej rozmiar.",
   "hl-decompression-title": "Dekompresja",
   "hl-decompression-desc": "Odwzoruj samą dekompresję kostną według poziomu i strony, używając Lee zones (centralna, zachyłek boczny, otworowa, pozaotworowa). Szczegół chirurgiczny istotny dla badań, rejestrów i operacji rewizyjnych.",
   "hl-barcode-title": "Skanowanie kodów kreskowych i UDI",

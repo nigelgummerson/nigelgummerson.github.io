@@ -73,6 +73,8 @@
   "hl-deformity-desc": "Anchor placement (screws, hooks, bands), planned correction forces.",
   "hl-screws-title": "Screw placement",
   "hl-screws-desc": "Choose the right trajectory for each level: pedicle, lateral mass, cortical (CBT), pars, translaminar and transarticular. The projected shank view uses published convergence angles for illustration.",
+  "hl-dragsize-title": "Drag size",
+  "hl-dragsize-desc": "Press and drag on a pedicle to add a screw and set its size.",
   "hl-decompression-title": "Decompression",
   "hl-decompression-desc": "Map the bony decompression itself by level and side using the Lee zones (central, lateral recess, foraminal, extraforaminal). The surgical detail that matters for research, registries and revision surgery.",
   "hl-barcode-title": "Barcode & UDI scanning",

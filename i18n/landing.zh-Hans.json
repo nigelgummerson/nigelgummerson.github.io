@@ -65,6 +65,8 @@
   "hl-deformity-desc": "锚定植入物（螺钉、钩、固定带）的放置，以及计划中的矫形力。",
   "hl-screws-title": "螺钉置入",
   "hl-screws-desc": "为每个节段选择合适的螺钉轨迹：椎弓根、侧块、皮质骨（CBT）、峡部、经椎板与经关节突。投影钉杆视图采用已发表的会聚角，仅作示意。",
+  "hl-dragsize-title": "拖动定尺寸",
+  "hl-dragsize-desc": "在椎弓根上按住并拖动，添加螺钉并设定其尺寸。",
   "hl-decompression-title": "减压",
   "hl-decompression-desc": "使用 Lee zones（中央、侧隐窝、椎间孔、椎间孔外）按节段和侧别标记骨性减压本身。这是对研究、登记库和翻修手术至关重要的手术细节。",
   "hl-barcode-title": "条码与 UDI 扫描",

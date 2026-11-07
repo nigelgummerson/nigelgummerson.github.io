@@ -65,6 +65,8 @@
   "hl-deformity-desc": "앵커 설치(나사, 후크, 밴드) 및 계획된 교정력.",
   "hl-screws-title": "나사 설치",
   "hl-screws-desc": "각 분절에 적합한 궤적을 선택하세요: 척추경, lateral mass, cortical(CBT), pars, translaminar, transarticular. 투영된 생크 뷰는 발표된 수렴각을 사용한 도식적 표현입니다.",
+  "hl-dragsize-title": "드래그 크기",
+  "hl-dragsize-desc": "척추경을 누른 채 드래그하여 나사를 추가하고 크기를 설정.",
   "hl-decompression-title": "감압술",
   "hl-decompression-desc": "Lee zones(중심부, 외측 함요부, 추간공, 추간공외)을 사용하여 분절별·좌우별로 골성 감압 자체를 매핑하세요. 연구, 레지스트리, 재수술에 중요한 수술 세부 정보입니다.",
   "hl-barcode-title": "바코드 및 UDI 스캔",

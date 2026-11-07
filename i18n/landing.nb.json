@@ -73,6 +73,8 @@
   "hl-deformity-desc": "Plassering av forankring (skruer, kroker, bånd), planlagte korreksjonskrefter.",
   "hl-screws-title": "Skrueplassering",
   "hl-screws-desc": "Velg riktig trajektorie for hvert nivå: pedikkel, lateral masse, kortikal (CBT), pars, translaminær og transartikulær. Den projiserte skaftvisningen bruker publiserte konvergensvinkler til illustrasjon.",
+  "hl-dragsize-title": "Dra størrelse",
+  "hl-dragsize-desc": "Trykk og dra på en pedikkel for å legge til en skrue og angi størrelsen.",
   "hl-decompression-title": "Dekompresjon",
   "hl-decompression-desc": "Kartlegg selve den benete dekompresjonen per nivå og side ved hjelp av Lee zones (sentral, lateral recess, foraminal, ekstraforaminal). Den kirurgiske detaljen som betyr noe for forskning, registre og revisjonskirurgi.",
   "hl-barcode-title": "Strekkode- og UDI-skanning",

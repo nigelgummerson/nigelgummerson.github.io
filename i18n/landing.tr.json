@@ -65,6 +65,8 @@
   "hl-deformity-desc": "Ankraj yerleşimi (vidalar, kancalar, bantlar), planlanan düzeltme kuvvetleri.",
   "hl-screws-title": "Vida yerleşimi",
   "hl-screws-desc": "Her seviye için doğru yörüngeyi seçin: pedikül, lateral kitle, kortikal (CBT), pars, translaminar ve transartiküler. Projeksiyonlu gövde görünümü, gösterim amacıyla yayımlanmış yakınsama açılarını kullanır.",
+  "hl-dragsize-title": "Sürükleyerek boyut",
+  "hl-dragsize-desc": "Vida eklemek ve boyutunu belirlemek için bir pedikül üzerinde basılı tutup sürükleyin.",
   "hl-decompression-title": "Dekompresyon",
   "hl-decompression-desc": "Kemik dekompresyonunu Lee zones kullanarak seviye ve tarafa göre haritalayın (santral, lateral reses, foraminal, ekstraforaminal). Araştırma, kayıt sistemleri ve revizyon cerrahisi için önemli olan cerrahi ayrıntı.",
   "hl-barcode-title": "Barkod ve UDI tarama",

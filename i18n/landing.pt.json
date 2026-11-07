@@ -65,6 +65,8 @@
   "hl-deformity-desc": "Colocação de âncoras (parafusos, ganchos, bandas), forças de correção previstas.",
   "hl-screws-title": "Colocação de parafusos",
   "hl-screws-desc": "Escolha a trajetória adequada para cada nível: pedicular, massa lateral, cortical (CBT), pars, translaminar e transarticular. A vista projetada do corpo do parafuso usa ângulos de convergência publicados, a título ilustrativo.",
+  "hl-dragsize-title": "Tamanho ao arrastar",
+  "hl-dragsize-desc": "Prima e arraste sobre um pedículo para adicionar um parafuso e definir o seu tamanho.",
   "hl-decompression-title": "Descompressão",
   "hl-decompression-desc": "Mapeie a própria descompressão óssea por nível e lado usando as Lee zones (central, recesso lateral, foraminal, extraforaminal). O detalhe cirúrgico que importa para investigação, registos e cirurgia de revisão.",
   "hl-barcode-title": "Leitura de código de barras e UDI",

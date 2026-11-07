@@ -65,6 +65,8 @@
   "hl-deformity-desc": "Platzierung der Verankerung (Schrauben, Haken, Bänder), geplante Korrekturkräfte.",
   "hl-screws-title": "Schraubenplatzierung",
   "hl-screws-desc": "Wählen Sie für jede Höhe die richtige Trajektorie: pedikulär, Massa lateralis, kortikal (CBT), Pars, translaminär und transartikulär. Die projizierte Schaftansicht verwendet veröffentlichte Konvergenzwinkel zur Veranschaulichung.",
+  "hl-dragsize-title": "Größe ziehen",
+  "hl-dragsize-desc": "Auf einem Pedikel drücken und ziehen, um eine Schraube hinzuzufügen und ihre Größe festzulegen.",
   "hl-decompression-title": "Dekompression",
   "hl-decompression-desc": "Bilden Sie die knöcherne Dekompression selbst nach Höhe und Seite mit den Lee zones ab (zentral, Recessus lateralis, foraminal, extraforaminal). Das chirurgische Detail, das für Forschung, Register und Revisionschirurgie zählt.",
   "hl-barcode-title": "Barcode- & UDI-Scannen",

@@ -65,6 +65,8 @@
   "hl-deformity-desc": "Ankkureiden asettelu (ruuvit, koukut, pannat), suunnitellut korjausvoimat.",
   "hl-screws-title": "Ruuvien asettelu",
   "hl-screws-desc": "Valitse oikea suuntaus kullekin tasolle: pedikkeli, lateraalimassa, kortikaalinen (CBT), pars, translaminaarinen ja transartikulaarinen. Projisoitu varsinäkymä käyttää julkaistuja konvergenssikulmia havainnollistamiseen.",
+  "hl-dragsize-title": "Vetokoko",
+  "hl-dragsize-desc": "Paina ja vedä pedikkelissä lisätäksesi ruuvin ja asettaaksesi sen koon.",
   "hl-decompression-title": "Dekompressio",
   "hl-decompression-desc": "Kartoita luinen dekompressio itse tason ja puolen mukaan käyttäen Lee zones -vyöhykkeitä (keskeinen, lateraalinen resessi, foraminaalinen, ekstraforaminaalinen). Kirurginen yksityiskohta, joka on tärkeä tutkimukselle, rekistereille ja uusintaleikkauksille.",
   "hl-barcode-title": "Viivakoodien ja UDI:n skannaus",

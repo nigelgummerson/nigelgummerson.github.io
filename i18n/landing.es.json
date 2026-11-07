@@ -73,6 +73,8 @@
   "hl-deformity-desc": "Colocación de anclajes (tornillos, ganchos, bandas), fuerzas de corrección previstas.",
   "hl-screws-title": "Colocación de tornillos",
   "hl-screws-desc": "Elija la trayectoria adecuada para cada nivel: pedicular, masa lateral, cortical (CBT), pars, translaminar y transarticular. La vista proyectada del vástago usa ángulos de convergencia publicados, a modo ilustrativo.",
+  "hl-dragsize-title": "Tamaño al arrastrar",
+  "hl-dragsize-desc": "Pulse y arrastre sobre un pedículo para añadir un tornillo y fijar su tamaño.",
   "hl-decompression-title": "Descompresión",
   "hl-decompression-desc": "Mapee la propia descompresión ósea por nivel y lado usando las zonas de Lee (central, receso lateral, foraminal, extraforaminal). El detalle quirúrgico que importa para la investigación, los registros y la cirugía de revisión.",
   "hl-barcode-title": "Escaneo de código de barras y UDI",
