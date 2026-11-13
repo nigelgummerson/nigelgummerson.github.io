@@ -7,7 +7,7 @@ Static landing page at `plan.skeletalsurgery.com` — the public entry point for
 ## Current Status
 
 - **Phase:** Live
-- **Last Updated:** 2026-04-19
+- **Last Updated:** 2026-11-08 (v3.66.00-beta)
 
 ## Project Structure
 

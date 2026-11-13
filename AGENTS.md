@@ -10,7 +10,10 @@ Deployed via GitHub Pages from `nigelgummerson/nigelgummerson.github.io`; custom
 
 ```
 products/skeletalsurgery-landing/
-├── index.html          # Landing page (hand-authored HTML + embedded CSS)
+├── index.html          # Landing page (hand-authored HTML + embedded CSS, inline scripts)
+├── landing-i18n.js     # Language switcher
+├── i18n/               # landing.<lang>.json, 22 languages
+├── img/  tools/        # Images; downloadable tools
 ├── CNAME               # plan.skeletalsurgery.com
 ├── robots.txt
 ├── sitemap.xml
