@@ -42,7 +42,8 @@ products/skeletalsurgery-landing/
 
 ## Code Style
 
-- Hand-authored HTML + embedded CSS. No JS. Keep it that way.
+- Hand-authored HTML + embedded CSS, with small inline scripts and `landing-i18n.js` for the 22-language
+  switcher. No framework and no build step. Keep it that way.
 - UK English where prose matters; technical terms follow the linked tool's conventions.
 - Accessibility: semantic headings, WCAG-AA contrast (the existing palette is compliant).
 
