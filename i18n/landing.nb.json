@@ -60,7 +60,7 @@
   "mfr-card-button": "Send STG- + GTIN-data på e-post",
 
   "about-h2": "Plan og dokument for ryggradsinstrumentering <span class=\"pill\">Gratis</span>",
-  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.67.00-beta",
+  "about-sub": "Leeds Spinal Instrumentation Plan and Record · v3.68.00-beta",
   "about-lead": "Et digitalt dokumentasjonsverktøy for instrumentering ved ryggkirurgi. Det dokumenterer den preoperative planen og den postoperative konstruksjonen, og erstatter håndtegnede diagrammer med et strukturert, eksporterbart format. Nettappen er hovedmåten å bruke det på og kjører i enhver moderne nettleser på en tilkoblet sykehusmaskin. Telefonappene gir rask implantatskanning på operasjonsstuen, og en enkeltfil offline-versjon dekker den sjeldne luftgapede maskinen som ikke kan laste nettappen selv én gang.",
 
   "hl-record-title": "Det komplette dokumentet",
@@ -77,6 +77,8 @@
   "hl-dragsize-desc": "Trykk og dra på en pedikkel for å legge til en skrue og angi størrelsen.",
   "hl-decompression-title": "Dekompresjon",
   "hl-decompression-desc": "Kartlegg selve den benete dekompresjonen per nivå og side ved hjelp av Lee zones (sentral, lateral recess, foraminal, ekstraforaminal). Den kirurgiske detaljen som betyr noe for forskning, registre og revisjonskirurgi.",
+  "hl-revision-title": "Revisjonskirurgi",
+  "hl-revision-desc": "Registrer materialet fra tidligere operasjon på et eget diagram, vist i grått under planen og sluttprotokollen, og merk hva som fjernes ved denne operasjonen.",
   "hl-barcode-title": "Strekkode- og UDI-skanning",
   "hl-barcode-desc": "Leser GS1 og HIBC, og fyller automatisk inn system, størrelse, lot og utløp, eller skriv inn størrelsene for hånd.",
   "hl-traceability-title": "Sporbarhet og lager",
